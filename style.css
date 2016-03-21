@@ -1,0 +1,64 @@
+body{
+    margin: auto;
+    background-image: url(front_page.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%; /*to do*/
+}
+#wrapper{
+	margin: auto;
+	max-width: 1000px;
+	min-width: 300px;
+	padding: 50px 20px 20px 20px;
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 70px;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+}
+
+section{
+    text-align: center; /* inte säker på centrering av knappen */ 
+}
+
+/* Kriterie-dokument*/
+nav {
+    background-color: #cdcdcd;
+    width: 30%;
+    height: 500px;
+    float: left;
+    padding: 30px;
+}
+#criteria_box {
+    background-color: red;
+    width: 50%;
+    height: 700px;
+    float: right;
+    padding: 30px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+li {
+    font-size: 25px;
+    padding: 10px;
+}
+
+#checkboxes{
+    text-align: left;
+    font-size: 20px;
+}
+
+.checkbox{
+    cursor: pointer;
+}
+
+label{
+    cursor: pointer;
+}
