@@ -64,7 +64,14 @@ label{
     cursor: pointer;
 }
 /*Kontakt*/
-
+article{
+    background-color: #F3F3F3;
+    width: 500px;
+    height: 100px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 31px 14px rgba(94,94,94,1);
+}
 
 
 /*Profilsida*/
