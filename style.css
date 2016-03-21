@@ -27,6 +27,10 @@ section{
     text-align: center; /* inte säker på centrering av knappen */ 
 }
 
+footer{
+    clear: both;
+}
+
 /* Kriterie-dokument*/
 nav {
     background-color: #F3F3F3;
@@ -71,15 +75,15 @@ label{
     cursor: pointer;
 }
 /*Kontakt*/
-article{
+.box{
     background-color: #F3F3F3;
-    width: 500px;
-    height: 100px;
+    width: 400px;
+    min-height: 100px;
     border-radius: 15px;
     padding: 20px;
+    margin: 30px;
     box-shadow: 0px 0px 30px 15px rgba(94,94,94,1);
 }
-
 
 /*Profilsida*/
 
