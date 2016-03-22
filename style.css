@@ -43,7 +43,7 @@ footer{
     clear: both;
 }
 
-/* Kriterie-dokument
+/* Kriterie-dokument */
 #criteria_heading {
 	margin-bottom: 50px;
 }
@@ -91,7 +91,7 @@ label{
     cursor: pointer;
 }
 
-Kontakt*/
+/* Kontakt*/
 .box{
     background-color: #F3F3F3;
     width: 400px;
