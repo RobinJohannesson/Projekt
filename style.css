@@ -22,6 +22,9 @@ h1{
     font-family: sans-serif;
     margin-bottom: 15px;
 }
+#indexNav{
+    margin-bottom: 60px;
+}
 #indexNavUl{
     list-style-type: none;
     margin: 0 auto;
@@ -43,7 +46,7 @@ footer{
     clear: both;
 }
 
-/* Kriterie-dokument */
+/* Kriterie-dokument*/ 
 #criteria_heading {
 	margin-bottom: 50px;
 }
