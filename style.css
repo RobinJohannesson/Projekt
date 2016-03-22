@@ -50,7 +50,7 @@ footer{
 #criteria_heading {
 	margin-bottom: 50px;
 }
-nav {
+#criteria_nav {
     background-color: #F3F3F3;
     width: 300px;
     height: auto;
@@ -58,12 +58,12 @@ nav {
     padding: 30px;
 	border-radius: 15px;
 	box-shadow: 0px 0px 30px 15px rgba(94,94,94,1);
-	margin-left: 50px;
+	margin-left: 130px;
 }
 
 #criteria_box {
     background-color: #F3F3F3;
-    width: 500px;
+    width: 600px;
     height: auto;
     margin: auto;
     padding: 30px;
@@ -71,17 +71,17 @@ nav {
 	box-shadow: 0px 0px 30px 15px rgba(94,94,94,1);
 }
 
-ul {
+#criteria_list {
     list-style-type: none;
     padding-left: 0px;
 }
 
-li {
+.criteria_listitem {
     font-size: 25px;
     padding: 10px;
 }
 
-#checkboxes{
+.checkboxes{
     text-align: left;
     font-size: 20px;
 }

@@ -11,18 +11,18 @@
                     Kriterier
                 </h1>
             </header>
-            <nav>
+            <nav id="criteria_nav">
                 <h2>Meny</h2>
-                <ul>
-                    <li>Önskningar av land/kontinent</li>
-                    <li>Äventyr</li>
-                    <li>Avslappning</li>
-                    <li>Kultur</li>
-                    <li>Klimat</li>
-                    <li>Karta</li>
-                    <li>Budget</li>
-                    <li>Boende</li>
-                    <li>Transportmedel</li>
+                <ul id="criteria_list">
+                    <li class="criteria_listitem">Önskningar av land/kontinent</li>
+                    <li class="criteria_listitem">Äventyr</li>
+                    <li class="criteria_listitem">Avslappning</li>
+                    <li class="criteria_listitem">Kultur</li>
+                    <li class="criteria_listitem">Klimat</li>
+                    <li class="criteria_listitem">Karta</li>
+                    <li class="criteria_listitem">Budget</li>
+                    <li class="criteria_listitem">Boende</li>
+                    <li class="criteria_listitem">Transportmedel</li>
                 </ul>
             </nav>
             <section>
@@ -31,40 +31,93 @@
                     <p>
                         Kriterier man kan kryssa i för äventyr
                     </p>
-                    <form id="checkboxes">
+                    <form class="checkboxes">
+							<legend>Äventyr</legend>
 							<p>
-								<input type="checkbox" value="bergsklattring" id="bergsklattring" class="checkbox">
+								<input type="checkbox" name="bergsklattring" id="bergsklattring" class="checkbox">
 								<label for="bergsklattring">Bergsklättring</label>
 							</p>
 							<p>
-								<input type="checkbox" value="vandring" id="vandring" class="checkbox">
+								<input type="checkbox" name="vandring" id="vandring" class="checkbox">
 								<label for="vandring">Vandring</label>
 							</p>
 							<p>
-								<input type="checkbox" value="kanot" id="kanot" class="checkbox">
+								<input type="checkbox" name="kanot" id="kanot" class="checkbox">
 								<label for="kanot">Kanot</label>
 							</p>
 							<p>
-								<input type="checkbox" value="backpacking" id="backpacking" class="checkbox">
+								<input type="checkbox" name="backpacking" id="backpacking" class="checkbox">
 								<label for="backpacking">Backpacking</label>
 							</p>
 							<p>
-								<input type="checkbox" value="safari" id="safari" class="checkbox">
+								<input type="checkbox" name="safari" id="safari" class="checkbox">
 								<label for="safari">Safari</label>
 							</p>
 							<p>
-								<input type="checkbox" value="skidor" id="skidor" class="checkbox">
+								<input type="checkbox" name="skidor" id="skidor" class="checkbox">
 								<label for="skidor">Skidor</label>
 							</p>
 							<p>
-								<input type="checkbox" value="surfing" id="surfing" class="checkbox">
+								<input type="checkbox" name="surfing" id="surfing" class="checkbox">
 								<label for="surfing">Surfing</label>
 							</p>
 							<p>
-								<input type="checkbox" value="dykning" id="dykning" class="checkbox">
+								<input type="checkbox" name="dykning" id="dykning" class="checkbox">
 								<label for="dykning">Dykning</label>
 							</p>
 					</form>
+					<!--<form class="checkboxes"> avslappning
+							<legend>Avslappning</legend>
+							<p>
+								<input type="checkbox" name="spa" id="spa" class="checkbox">
+								<label for="spa">Spa</label>
+							</p>
+							<p>
+								<input type="checkbox" name="nature" id="nature" class="checkbox">
+								<label for="nature">Naturupplevelser</label>
+							</p>
+							<p>
+								<input type="checkbox" name="sun_vacation" id="sun_vacation" class="checkbox">
+								<label for="sun_vacation">Solsemester</label>
+							</p>
+							<p>
+								<input type="checkbox" name="yoga" id="yoga" class="checkbox">
+								<label for="yoga">Yoga</label>
+							</p>
+							<p>
+								<input type="checkbox" name="meditation" id="meditation" class="checkbox">
+								<label for="meditation">Meditation</label>
+							</p>
+					</form>
+					<!--<form class="checkboxes"> kultur
+							<legend>Kultur</legend>
+							<p>
+								<input type="checkbox" name="sightseeing" id="sightseeing" class="checkbox">
+								<label for="sightseeing">Sightseeing</label>
+							</p>
+							<p>
+								<input type="checkbox" name="town" id="town" class="checkbox">
+								<label for="town">Storstad</label>
+							</p>
+							<p>
+								<input type="checkbox" name="history" id="history" class="checkbox">
+								<label for="history">Historia</label>
+							</p>
+							<p>
+								<input type="checkbox" name="religion" id="religion" class="checkbox">
+								<label for="religion">Religion</label>
+							</p>
+							<p>
+								<input type="checkbox" name="education" id="education" class="checkbox">
+								<label for="education">Utbildningssyfte</label>
+							</p>
+							<p>
+								<input type="checkbox" name="food_trip" id="food_trip" class="checkbox">
+								<label for="food_trip">Matresa</label>
+							</p>
+					</form>
+					-->
+					
                 </div>
             </section>
             <footer>
