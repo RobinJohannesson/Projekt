@@ -32,7 +32,7 @@ h1{
      
 }
 
-.indexNavLi{
+#indexNavLi{
     display: inline;
     margin-right: 10px;
     font-size: 30px;
@@ -111,6 +111,41 @@ label{
 }
 
 /*Profilsida*/
-
+#profilWrapper{
+    width: auto;
+    height: auto;
+}
+#headerLink{
+    color: white;
+    margin-left: 1145px;
+    margin-top: -68px;
+    font-size: 50px;
+}
+#profilSection{
+    background-color: #F3F3F3;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    height: 450px;
+    width: 700px;
+    border-radius: 10px;
+}
+#profilNav{
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+}
+#profilNavUl{
+    list-style-type: none;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.profilNavLi_1{
+    display: inline;
+    margin-left: 75px;
+}
+#profilNavLi_2{
+    margin-top: 80px;
+    margin-left: 55px;
+}
 
 /*Resultat*/
