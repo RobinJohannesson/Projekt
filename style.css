@@ -11,7 +11,7 @@ body{
 	min-width: 300px;
 }
 
-#headerStart{
+#headStart{
     text-align: center;
     height: 180px;
     width: 100%;
@@ -49,6 +49,12 @@ h2{
     margin-right: 65px;
 }
 .indexNavLi_2{
+    color: white;
+    display: inline;
+    margin-right: 65px;
+    font-size: 35px;
+}
+.indexNavA{
     color: white;
     display: inline;
     margin-right: 65px;
@@ -126,28 +132,47 @@ label{
 }
 
 /*Profilsida*/
+#headProf{
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    height: 150px;
+    width: 1000px;
+    background: rgba(0,0,0,0.15);
+}
 #profilWrapper{
     width: auto;
     height: auto;
 }
-#headerLink{
+
+/*#headerLink{
     color: white;
     margin-left: 1145px;
     margin-top: -68px;
     font-size: 50px;
-}
-#profilSection{
-    background-color: #F3F3F3;
+}*/
+#profSect{
     margin: 0 auto;
     margin-bottom: 150px;
     height: 450px;
-    width: 700px;
-    border-radius: 10px;
+    width: 1000px;
 }
-#profilNav{
-    margin-top: 50px;
-    width: auto;
-    height: auto;
+#profSectDiv{
+    background: rgba(0,0,0,0.15);
+    margin: 0 auto;
+    margin-bottom: 150px;
+    width: 1000px;
+    height: 450px;
+    
+}
+#profilNav1{
+    background: rgba(0,0,0,0.15);
+    width: 1000px;
+    height: 450px;
+}
+#profilNav2{
+    width: 200px;
+    height: 450px;
 }
 #profilNavUl{
     list-style-type: none;
@@ -159,8 +184,6 @@ label{
     margin-left: 75px;
 }
 #profilNavLi_2{
-    margin-top: 80px;
-    margin-left: 55px;
+    margin-bottom: 40px;
 }
-
 /*Resultat*/
