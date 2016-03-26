@@ -28,25 +28,26 @@
             <section>
                 <div id="criteria_box">
 					<form class="checkboxes" id="choose_country">
+						<legend>Välj kontitent/land</legend>
 						<p>
 							<select>
-								<option value="europe">Europa</option>
-								<option value="south_america">Sydamerika</option>
-								<option value="north_america">Nordamerika</option>
-								<option value="asia">Asien</option>
-								<option value="australia">Australien (Oceanien)</option>
-								<option value="africa">Afrika</option>
-								<option value="antarctica">Antarktis</option>
+								<option name="europe">Europa</option>
+								<option name="south_america">Sydamerika</option>
+								<option name="north_america">Nordamerika</option>
+								<option name="asia">Asien</option>
+								<option name="australia">Australien (Oceanien)</option>
+								<option name="africa">Afrika</option>
+								<option name="antarctica">Antarktis</option>
 							</select>
 						</p>
 						<p>
 							Här kommer drop-down lista för länder
 						</p>
-					</form>
 						<p>
 							Har du ingen särskild kontinent/land du vill åka till kan du gå vidare till nästa sida
-						</p>
-					<!--<form class="checkboxes" id="adventure"> ÄVENTYR
+						</p><!--
+                    <form class="checkboxes" id="adventure"> ÄVENTYR
+						<legend>Äventyr</legend>
 						<p>
 							<input type="checkbox" name="bergsklattring" id="bergsklattring" class="checkbox">
 							<label for="bergsklattring">Bergsklättring</label>
@@ -80,7 +81,8 @@
 							<label for="dykning">Dykning</label>
 						</p>
 					</form>
-					<form class="checkboxes" id="relaxation"> AVSLAPPNING
+				<!--<form class="checkboxes" id="relaxation"> AVSLAPPNING
+						<legend>Avslappning</legend>
 						<p>
 							<input type="checkbox" name="spa" id="spa" class="checkbox">
 							<label for="spa">Spa</label>
@@ -103,6 +105,7 @@
 						</p>
 					</form>
 					<form class="checkboxes" id="culture"> KULTUR
+						<legend>Kultur</legend>
 						<p>
 							<input type="checkbox" name="sightseeing" id="sightseeing" class="checkbox">
 							<label for="sightseeing">Sightseeing</label>
