@@ -3,7 +3,7 @@ body{
     margin: auto;
     background-image: url(Oceanview.jpg);
     background-repeat: no-repeat;
-    background-size: 1580px 800px; /*to do*/
+    background-size: 100%; /*to do*/
 }
 #wrapper{
 	margin: auto;
