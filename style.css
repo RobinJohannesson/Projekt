@@ -135,7 +135,15 @@ label{
 }
 
 #faq{
-    float: right;
+    float: left;
+}
+
+#syfte{
+    float: left;
+}
+
+#kontakt{
+    float: left;
 }
 
 /*Profilsida*/
