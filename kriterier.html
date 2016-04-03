@@ -28,7 +28,7 @@
             <section>
                 <div id="criteria_box">
 					<form class="checkboxes" id="choose_country">
-						<legend>Välj kontitent/land</legend>
+						<legend>Välj kontinent</legend>
 						<p>
 							<select>
 								<option name="europe">Europa</option>
@@ -41,7 +41,19 @@
 							</select>
 						</p>
 						<p>
-							Här kommer drop-down lista för länder
+							Välj land
+						</p>
+						<p>
+							<select>
+								<option name="spain">Spanien</option>
+								<option name="japan">Japan</option>
+								<option name="greece">Grekland</option>
+								<option name="usa">USA</option>
+								<option name="norway">Norge</option>
+								<option name="egypt">Egypten</option>
+								<option name="china">Kina</option>
+							</select>
+							<!--Viktigt att lägga in de länder som finns i scenario-->
 						</p>
 						<p>
 							Har du ingen särskild kontinent/land du vill åka till kan du gå vidare till nästa sida
@@ -131,7 +143,123 @@
 							<label for="food_trip">Matresa</label>
 						</p>
 					</form>
+					<form class="checkboxes" id="climate"> KLIMAT
+						<legend>Klimat</legend>
+						<p>
+							Kryssa i vilka väder du kan tänka dig.
+						</p>
+						<p>
+							<input type="checkbox" name="sun" id="sun" class="checkbox">
+							<label for="sun">Sol och värme (ca 20 grader eller mer)</label>
+						</p>
+						<p>
+							<input type="checkbox" name="cool_weather" id="cool_weather" class="checkbox">
+							<label for="cool_weather">Sval temperatur (ca 10-20 grader)</label>
+						</p>
+						<p>
+							<input type="checkbox" name="snow" id="snow" class="checkbox">
+							<label for="snow">Snö och kallt (kring fryspunkten eller kallare)</label>
+						</p>
+						<p>
+							Kryssa i om du vill ha någon särskild terräng.
+						</p>
+						<p>
+							<input type="checkbox" name="mountain" id="mountain" class="checkbox">
+							<label for="mountain">Bergigt</label>
+						</p>
+						<p>
+							<input type="checkbox" name="flat" id="flat" class="checkbox">
+							<label for="flat">Plant</label>
+						</p>
+						<p>
+							<input type="checkbox" name="desert" id="desert" class="checkbox">
+							<label for="desert">Öken</label>
+						</p>
+						<p>
+							<input type="checkbox" name="forest" id="forest" class="checkbox">
+							<label for="forest">Skog</label>
+						</p>
+						<p>
+							<input type="checkbox" name="water" id="water" class="checkbox">
+							<label for="water">Närhet till vatten</label>
+						</p>
+					</form>
+					<form class="checkboxes" id="distance"> DISTANS
+						<legend>Distans</legend>
+						<p>
+							<select>
+								<option name="distance_1">1 m</option>
+								<option name="distance_2">2 m</option>
+								<option name="distance_3">3 m</option>
+							</select>
+						</p>
+						<p>
+							Karta.
+						</p>
+					</form>
+					<form class="checkboxes" id="budget"> BUDGET
+						<legend>Budget</legend>
+						<p>
+							<label for="travel_cost">Maxkostnad för transport</label>
+							<input type="text" name="travel_cost" id="travel_cost" class="checkbox">			
+						</p>
+						<p>
+							<label for="living_cost">Maxkostnad för boende</label>
+							<input type="text" name="living_cost" id="living_cost" class="checkbox">
+						</p>
+						<p>
+							<label for="cost_per_day">Max levnadskostnad per dag</label>
+							<input type="text" name="cost_per_day" id="cost_per_day" class="checkbox">
+						</p>
+					</form>
+					<form class="checkboxes" id="lodging"> BOENDE
+						<legend>Boende</legend>
+						<p>
+							<input type="checkbox" name="hotel" id="hotel" class="checkbox">
+							<label for="hotel">Hotell</label>
+						</p>
+						<p>
+							<input type="checkbox" name="motel" id="motel" class="checkbox">
+							<label for="motel">Motell</label>
+						</p>
+						<p>
+							<input type="checkbox" name="hostel" id="hostel" class="checkbox">
+							<label for="hostel">Vandrarhem</label>
+						</p>
+						<p>
+							<input type="checkbox" name="camping" id="camping" class="checkbox">
+							<label for="camping">Camping</label>
+						</p>
+						<p>
+							<input type="checkbox" name="b_and_b" id="b_and_b" class="checkbox">
+							<label for="b_and_b">Bed & breakfast</label>
+						</p>
+						<p>
+							<input type="checkbox" name="bungalow" id="bungalow" class="checkbox">
+							<label for="bungalow">Bungalow</label>
+						</p>
+					</form>
+					<form class="checkboxes" id="transport"> TRANSPORTMEDEL
+						<legend>Transportmedel</legend>
+						<p>
+							<input type="checkbox" name="airplane" id="airplane" class="checkbox">
+							<label for="airplane">Flygplan</label>
+						</p>
+						<p>
+							<input type="checkbox" name="train" id="train" class="checkbox">
+							<label for="train">Tåg</label>
+						</p>
+						<p>
+							<input type="checkbox" name="bus" id="bus" class="checkbox">
+							<label for="bus">Buss</label>
+						</p>
+						<p>
+							<input type="checkbox" name="other_transport" id="other_transport" class="checkbox">
+							<label for="other_transport">Annat/eget transportmedel</label>
+						</p>
+					</form>
 					-->
+					<input type="button" value="Done">
 				</div>
             </section>
             <footer>
