@@ -12,8 +12,8 @@ class User {
 	
 	function connectToDB() {
 		$dbhost = "localhost";
-		$dbuser = ""; //Ange MySQL Namn här
-		$dbpass = ""; //Ange MySQL Lösenord här
+		$dbuser = ""; //Ange MySQL Namn hÃ¤r
+		$dbpass = ""; //Ange MySQL LÃ¶senord hÃ¤r
 		$dbname = "NewHorizons";
 		$this->connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 		
@@ -23,10 +23,13 @@ class User {
 	}
 	
 	function logIn() {
-						
-		$query = "SELECT * FROM users WHERE name = '" . $this->userInfo[0] . "' AND password = '". $this->userInfo[1] . "'";
-		$result = mysqli_query($this->connection, $query);
+					
+		$query = $conn->prepare("SELECT * FROM users WHERE name = ? AND password = ?");
+		$query->bind_param("ss", $this->userInfo[0], $this->userInfo[1]); 
+		$query->execute();
 		
+		$result = $query->get_result();
+
 		$_SESSION["Logged In"] = "Logged In";
 		
 		if (!$result) {
