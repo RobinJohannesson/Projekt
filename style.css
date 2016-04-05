@@ -134,8 +134,12 @@ label{
     display: inline-block;
 }
 
-#faq{
-    float: right;
+#syfte{
+    float: left;
+}
+
+#kontakt{
+    float: left;
 }
 
 /*Profilsida*/
