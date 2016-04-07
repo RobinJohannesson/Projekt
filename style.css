@@ -130,17 +130,8 @@ label{
     min-height: 100px;
     border-radius: 15px;
     padding: 20px;
-    margin: 30px;
     box-shadow: 0px 0px 30px 15px rgba(94,94,94,1);
-    display: inline-block;
-}
-
-#syfte{
-    float: left;
-}
-
-#kontakt{
-    float: left;
+    margin: 45px auto 45px;
 }
 
 /*Profilsida*/
