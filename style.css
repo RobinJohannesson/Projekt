@@ -31,9 +31,11 @@ h2{
     font-size: 30px;
     font-family: "Cinzel";
 }
-h3{
+h3, h4, h5, h6{
     color: white;
+    font-family: "Cinzel";
 }
+
 p{
     color: white;
     font-size: 20px;
@@ -125,7 +127,6 @@ label{
 
 /* Kontakt*/
 .box{
-    background-color: #F3F3F3;
     width: 400px;
     border-radius: 15px;
     padding: 20px;
@@ -136,17 +137,33 @@ label{
 /*Visa resor*/
 #fact{
     float: left;
-    min-height: 500px;
+    min-height: 300px;
+    width: 40%;
 }
 
 .widget{
-    background-color: #F3F3F3;
     width: 100px;
+    height: 100px;
     border-radius: 50%;
+    line-height: 60px;
     padding: 20px;
-    text-align: center;
     box-shadow: 0px 0px 30px 15px rgba(94,94,94,1);
-    margin: 45px auto 45px;
+    margin: 45px 0px 45px 0px;
+}
+
+#widget-box{
+    float: left;
+    margin: 0px 45px 0px 90px;
+    text-align: center;
+}
+
+#text-center{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#text-underline{
+    text-decoration: underline;
 }
 
 /*Profilsida*/
