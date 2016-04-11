@@ -3,9 +3,13 @@
     <head>
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="style.css">
+		<script src="jquery.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <title>GetAway</title>
     </head>
     <body>
+
             <header>
                 <h1 id="criteria_heading">
                     Kriterier
@@ -14,23 +18,24 @@
             <nav id="criteria_nav">
                 <h2>Meny</h2>
                 <ul id="criteria_list">
-                    <li class="criteria_listitem">Önskningar av land/kontinent</li>
-                    <li class="criteria_listitem">Äventyr</li>
-                    <li class="criteria_listitem">Avslappning</li>
-                    <li class="criteria_listitem">Kultur</li>
-                    <li class="criteria_listitem">Klimat</li>
-                    <li class="criteria_listitem">Karta</li>
-                    <li class="criteria_listitem">Budget</li>
-                    <li class="criteria_listitem">Boende</li>
-                    <li class="criteria_listitem">Transportmedel</li>
+                    <a href="#choose_country" class="criteria_links"><li id="listitem1" class="criteria_listitem">Önskningar av land/kontinent</li></a>
+                    <a href="#adventure" class="criteria_links"><li id="listitem2" class="criteria_listitem">Äventyr</li></a>
+                    <a href="#relaxation" class="criteria_links"><li id="listitem3" class="criteria_listitem">Avslappning</li></a>
+                    <a href="#culture" class="criteria_links"><li id="listitem4" class="criteria_listitem">Kultur</li></a>
+                    <a href="#climate" class="criteria_links"><li id="listitem5" class="criteria_listitem">Klimat</li></a>
+                    <a href="#distance" class="criteria_links"><li id="listitem6" class="criteria_listitem">Karta</li></a>
+                    <a href="#budget" class="criteria_links"><li id="listitem7" class="criteria_listitem">Budget</li></a>
+                    <a href="#lodging" class="criteria_links"><li id="listitem8" class="criteria_listitem">Boende</li></a>
+                    <a href="#transport" class="criteria_links"><li id="listitem9" class="criteria_listitem">Transportmedel</li></a>
                 </ul>
             </nav>
             <section>
                 <div id="criteria_box">
-					<form class="checkboxes" id="choose_country">
+					<form class="checkboxes" id="choose_country"> <!--VÄLJ LAND-->
 						<legend>Välj kontinent</legend>
 						<p>
 							<select>
+								<option name="no_continent_preference">Ingen preferens</option>
 								<option name="europe">Europa</option>
 								<option name="south_america">Sydamerika</option>
 								<option name="north_america">Nordamerika</option>
@@ -45,6 +50,7 @@
 						</p>
 						<p>
 							<select>
+								<option name="no_country_preference">Ingen preferens</option>
 								<option name="spain">Spanien</option>
 								<option name="japan">Japan</option>
 								<option name="greece">Grekland</option>
@@ -57,8 +63,9 @@
 						</p>
 						<p>
 							Har du ingen särskild kontinent/land du vill åka till kan du gå vidare till nästa sida
-						</p><!--
-                    <form class="checkboxes" id="adventure"> ÄVENTYR
+						</p>
+					</form>
+                    <form class="checkboxes" id="adventure"> <!--ÄVENTYR-->
 						<legend>Äventyr</legend>
 						<p>
 							<input type="checkbox" name="bergsklattring" id="bergsklattring" class="checkbox">
@@ -93,7 +100,7 @@
 							<label for="dykning">Dykning</label>
 						</p>
 					</form>
-				<!--<form class="checkboxes" id="relaxation"> AVSLAPPNING
+					<form class="checkboxes" id="relaxation"> <!--AVSLAPPNING-->
 						<legend>Avslappning</legend>
 						<p>
 							<input type="checkbox" name="spa" id="spa" class="checkbox">
@@ -116,7 +123,7 @@
 							<label for="meditation">Meditation</label>
 						</p>
 					</form>
-					<form class="checkboxes" id="culture"> KULTUR
+					<form class="checkboxes" id="culture"> <!--KULTUR-->
 						<legend>Kultur</legend>
 						<p>
 							<input type="checkbox" name="sightseeing" id="sightseeing" class="checkbox">
@@ -143,7 +150,7 @@
 							<label for="food_trip">Matresa</label>
 						</p>
 					</form>
-					<form class="checkboxes" id="climate"> KLIMAT
+					<form class="checkboxes" id="climate"> <!--KLIMAT-->
 						<legend>Klimat</legend>
 						<p>
 							Kryssa i vilka väder du kan tänka dig.
@@ -184,7 +191,7 @@
 							<label for="water">Närhet till vatten</label>
 						</p>
 					</form>
-					<form class="checkboxes" id="distance"> DISTANS
+					<form class="checkboxes" id="distance"> <!--DISTANS-->
 						<legend>Distans</legend>
 						<p>
 							<select>
@@ -197,7 +204,7 @@
 							Karta.
 						</p>
 					</form>
-					<form class="checkboxes" id="budget"> BUDGET
+					<form class="checkboxes" id="budget"> <!--BUDGET-->
 						<legend>Budget</legend>
 						<p>
 							<label for="travel_cost">Maxkostnad för transport</label>
@@ -212,7 +219,7 @@
 							<input type="text" name="cost_per_day" id="cost_per_day" class="checkbox">
 						</p>
 					</form>
-					<form class="checkboxes" id="lodging"> BOENDE
+					<form class="checkboxes" id="lodging"> <!--BOENDE-->
 						<legend>Boende</legend>
 						<p>
 							<input type="checkbox" name="hotel" id="hotel" class="checkbox">
@@ -239,7 +246,7 @@
 							<label for="bungalow">Bungalow</label>
 						</p>
 					</form>
-					<form class="checkboxes" id="transport"> TRANSPORTMEDEL
+					<form class="checkboxes" id="transport"> <!--TRANSPORTMEDEL-->
 						<legend>Transportmedel</legend>
 						<p>
 							<input type="checkbox" name="airplane" id="airplane" class="checkbox">
@@ -258,7 +265,6 @@
 							<label for="other_transport">Annat/eget transportmedel</label>
 						</p>
 					</form>
-					-->
 					<input type="button" value="Done">
 				</div>
             </section>
