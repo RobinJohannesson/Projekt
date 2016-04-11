@@ -186,14 +186,14 @@ label{
 }
 
 /*Profilsida*/
-/*#headProf{
-    margin: 0 auto;
-    margin-top: 40px;
+.headerProf{
     text-align: center;
-    height: 150px;
-    width: 1000px;
-    /*background: rgba(0,0,0,0.15);*/
+    height: 180px;
+    width: 100%;
+    background: rgba(0,0,0,0.15);
+    margin-bottom: 40px;
 }
+
 
 #profilWrapper{
     width: auto;
@@ -208,9 +208,8 @@ label{
 #profKritSect{
     background: rgba(0,0,0,0.15);
     width: 800px;
-    height: 500px;
+    height: 450px;
     margin: auto;
-    text-align:
 }
 #profSectDiv{
     float: left;
@@ -242,12 +241,13 @@ label{
 #profilNav2{
     float: left;
     width: 200px;
-    height: 450px;
+    height: 400px;
+    text-align: left;
 }
 #profilNavUl{
-    list-style-type: none;
+    /*list-style-type: none;
     padding-top: 60px;
-    /*margin-left: -190px;*/
+    margin-left: -190px;*/
 }
 .profilNavLi_1{
     display: inline;
@@ -255,6 +255,9 @@ label{
 }
 #profilNavLi_2{
     margin-bottom: 40px;
+}
+.profilNavli_3{
+    float: left;
 }
 #mainContent{
     float: left;
@@ -299,5 +302,23 @@ label{
     height: 300px;
     background: rgba(0,0,0,0.15);
     
+}
+#savedKritSubHeader{
+    float: right;
+    height: 40px;
+    width: 600px;
+}
+#savedKritList{
+    float: right;
+    margin-top: 20px;
+    margin-right: 150px;
+    height: 300px;
+    width: 300px;
+    overflow: scroll;
+    background-color:cadetblue;
+}
+#savedKritListCheckbox{
+    display: inline;
+    margin-left: 15px;
 }
 /*Resultat*/
