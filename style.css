@@ -1,14 +1,19 @@
 /*Standard (index)*/
 body{
     margin: auto;
-    background-image: url(Oceanview.jpg);
+    background-image: url(Egypt-Pyramid.jpg);
     background-repeat: no-repeat;
     background-size: 100%; /*to do*/
 }
 #wrapper{
 	margin: auto;
-	max-width: 100%;
+	width: 1000px;
 	min-width: 300px;
+    background: rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 40px 5px rgba(50,50,50,1);
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #headStart{
@@ -142,7 +147,6 @@ label{
     width: 400px;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0px 0px 30px 15px rgba(94,94,94,1);
     margin: 45px auto 45px;
 }
 
@@ -150,7 +154,7 @@ label{
 #fact{
     float: left;
     min-height: 300px;
-    width: 40%;
+    width: 50%;
 }
 
 .widget{
@@ -159,14 +163,17 @@ label{
     border-radius: 50%;
     line-height: 60px;
     padding: 20px;
-    box-shadow: 0px 0px 30px 15px rgba(94,94,94,1);
     margin: 45px 0px 45px 0px;
 }
 
 #widget-box{
-    float: left;
-    margin: 0px 45px 0px 90px;
+    float: right;
     text-align: center;
+    margin: 0px 45px 0px 90px;
+}
+
+#second{
+    margin-left: 180px;
 }
 
 #text-center{
