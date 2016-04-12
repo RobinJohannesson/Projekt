@@ -172,8 +172,20 @@ label{
     margin: 0px 45px 0px 90px;
 }
 
+#first{
+    background-image: url(Kairo.jpg);
+    background-size: cover;
+}
+
 #second{
     margin-left: 180px;
+    background-image: url(Alexandria.jpg);
+    background-size: cover;
+}
+
+#third{
+    background-image: url(Luxor.jpg);
+    background-size: cover;
 }
 
 #text-center{
