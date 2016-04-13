@@ -188,7 +188,7 @@ label {
 }
 
 #widget-box {
-    width: 500px;
+    width: 650px;
     float: right;
     text-align: center;
 }
@@ -196,19 +196,19 @@ label {
 #first {
     background-image: url(Kairo.jpg);
     background-size: cover;
-    margin: -50px 0px 0px -150px;
+    margin: -50px 0px 0px 0px;
 }
 
 #second {
     background-image: url(Alexandria.jpg);
     background-size: cover;
-    margin: -100px 0px 0px 50px;
+    margin: -100px 0px 0px 200px;
 }
 
 #third {
     background-image: url(Luxor.jpg);
     background-size: cover;
-    margin: -100px 0px 0px 250px;
+    margin: -100px 0px 0px 400px;
 }
 
 #text-center {
