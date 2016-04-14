@@ -364,20 +364,15 @@ label {
 
 .img_cities {
 	width: 400px;
-	float: left;
 }
 
 .city_description {
 	width: 650px;
-}
-
-.city_text {
 	float: left;
 }
 
 .booking_box {
 	width: 450px;
-	border: 1px solid black;
 	float: right;
 	height: 400px;
 }
