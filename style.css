@@ -401,16 +401,3 @@ label {
     display: inline;
     margin-left: 15px;
 }
-
-/*Resultat*/
-
-/*Visa städer*/
-.show_city {
-    background: rgba(0, 0, 0, 0.15);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 40px 5px rgba(50, 50, 50, 1);
-    width: 1000px;
-    margin: auto;
-}
->>>>>>> origin/master
