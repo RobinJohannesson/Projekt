@@ -1,7 +1,8 @@
 <?php
+session_start();
 
 class User {
-	
+
 	private $userInfo = array();
 	private	$dbname = "NewHorizons";
 	private $connection;
@@ -10,10 +11,10 @@ class User {
 		$this->userInfo = $userInfo;
 	}
 	
-	function connectToDB() {
+	public function connectToDB() {
 		$dbhost = "localhost";
-		$dbuser = ""; //Ange MySQL Namn här
-		$dbpass = ""; //Ange MySQL Lösenord här
+		$dbuser = "root"; //Ange MySQL Namn här
+		$dbpass = "hejhej123"; //Ange MySQL Lösenord här
 		$dbname = "NewHorizons";
 		$this->connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 		
@@ -22,9 +23,9 @@ class User {
 		} 		
 	}
 	
-	function logIn() {
+	public function logIn() {
 					
-		$query = $conn->prepare("SELECT * FROM users WHERE name = ? AND password = ?");
+		$query = $this->connection->prepare("SELECT * FROM users WHERE name = ? AND password = ?");
 		$query->bind_param("ss", $this->userInfo[0], $this->userInfo[1]); 
 		$query->execute();
 		
@@ -32,9 +33,9 @@ class User {
 
 		$_SESSION["Logged In"] = "Logged In";
 		
-		if (!$result) {
+		/*if (!$result) {
 			die(mysqli_error($this->connection));
-		}
+		} */
 		
 		if(mysqli_num_rows($result) == 1) {
 			return true;
