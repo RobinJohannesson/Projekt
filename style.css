@@ -187,50 +187,51 @@ label {
 #fact {
     float: left;
     min-height: 300px;
-    width: 50%;
+    width: 600px;
+}
+
+#widget-box {
+    width: 600px;
+    float: right;
 }
 
 .widget {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    line-height: 60px;
     padding: 20px;
 }
 
-#widget-box {
-    width: 650px;
-    float: right;
+.widget-text{
+    margin-top: 175px;
     text-align: center;
+}
+
+.widget-link{
+     text-decoration: none;
 }
 
 #first {
     background-image: url(Kairo.jpg);
     background-size: cover;
-    margin: -50px 0px 0px 0px;
+    margin: -25px 0px 0px -50px;
 }
 
 #second {
     background-image: url(Alexandria.jpg);
     background-size: cover;
-    margin: -100px 0px 0px 200px;
+    margin: -125px 0px 0px 175px;
 }
 
 #third {
     background-image: url(Luxor.jpg);
     background-size: cover;
-    margin: -100px 0px 0px 400px;
+    margin: -125px 0px 0px 400px;
 }
 
-#text-center {
+.text-center {
     text-align: center;
-    text-decoration: underline;
 }
-
-#text-underline {
-    text-decoration: underline;
-}
-
 
 /*Profilsida*/
 
