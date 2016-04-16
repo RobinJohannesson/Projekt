@@ -191,45 +191,60 @@ label {
 }
 
 #widget-box {
-    width: 600px;
+    width: 780px;
+    height: auto;
+    margin-right: 30px;
     float: right;
 }
 
-.widget {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    padding: 20px;
-}
-
-.widget-text{
-    margin-top: 175px;
+#widget-head {
     text-align: center;
 }
 
-.widget-link{
-     text-decoration: none;
+.widget-content {
+    height: 260px;
+    width: 200px;
+    float: left;
+    margin: 0 30px;
 }
 
-#first {
+.widget-content a {
+    text-decoration: none;
+}
+
+#widget-content-first {
+}
+
+#widget-content-second {
+    margin-top: 50px;
+}
+
+#widget-content-third {
+    margin-top: 100px;
+}
+
+.widget {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+#widget-first {
     background-image: url(Kairo.jpg);
     background-size: cover;
-    margin: -25px 0px 0px -50px;
 }
 
-#second {
+#widget-second {
     background-image: url(Alexandria.jpg);
     background-size: cover;
-    margin: -125px 0px 0px 175px;
 }
 
-#third {
+#widget-third {
     background-image: url(Luxor.jpg);
     background-size: cover;
-    margin: -125px 0px 0px 400px;
 }
 
-.text-center {
+#widget-text {
     text-align: center;
 }
 
