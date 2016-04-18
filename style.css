@@ -201,11 +201,19 @@ label {
     text-align: center;
 }
 
+@keyframes widget-content-open {
+    from {margin-left: -150px;}
+    to {width: 200px;}
+}
+
 .widget-content {
     height: 260px;
     width: 200px;
     float: left;
     margin: 0 30px;
+    animation-name: widget-content-open;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .widget-content a {
@@ -246,6 +254,65 @@ label {
 
 #widget-text {
     text-align: center;
+}
+
+/*Visa länder*/
+
+.cloud{
+    background-image: url(cloud.jpg);
+    background-size: cover;
+}
+
+.country-box {
+    width: 450px;
+    height: 525px;
+    float: left;
+    margin: 0px 25px;
+}
+
+.country-box a{
+    text-decoration: none;
+}
+
+@keyframes show-country-open {
+    from {width: 0px; height: 0px;}
+    to {width: 450px; height 450px;}
+}
+
+.country-widget {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    animation-name: show-country-open;
+    animation-duration: 2s;
+}
+
+#first-country-widget{
+    background-image: url(egypt-country.jpg);
+    background-size: cover;
+}
+
+#second-country-widget{
+    background-image: url(schweiz-country.jpg);
+    background-size: cover;
+}
+
+#third-country-widget{
+    background-image: url(grekland-country.jpg);
+    background-size: cover;
+}
+
+.country-text {
+    height: 50px;
+    text-align: center;
+}
+
+#container-country {
+    border-radius: 15px;
+	margin: 30px auto 0px auto;
+    min-height: 180px;
+    padding: 30px;
+	max-width: 1530px;
 }
 
 /*Profilsida*/
