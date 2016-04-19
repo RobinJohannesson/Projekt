@@ -27,7 +27,7 @@
             </nav>
             <section>
                 <div id="criteria_box">
-					<form class="checkboxes" id="choose_criteria"> <!--VÄLJ LAND-->
+					<form class="checkboxes" id="choose_criteria" method="POST" action="save.php"> <!--VÄLJ LAND-->
 						<h2 id="form_top_heading">Önskemål för resan</h2>
 						<p>
 							Här kan du fylla i alla de önskemål du har för din resa.
@@ -290,9 +290,9 @@
 							<label for="other_transport">Annat/eget transportmedel</label>
 						</p>
 						<hr>
+						<input type="button" value="Ta fram resa">
+						<input type="submit" value="Spara & ta fram resa">
 					</form>
-					<input type="button" value="Ta fram resa">
-					<input type="button" value="Spara & ta fram resa">
 				</div>
             </section>
             <footer>

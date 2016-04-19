@@ -25,7 +25,7 @@ if(!isset($_SESSION['user']) || $_SESSION['user'] != "Logged In") {
     <section id="profSect">
         <nav id="profilNav1">
             <ul id="profilNavUl">
-                <li class="profilNavLi_1"><a href="profilSparKrit.html"><img src="check.png" height="120px" width="120px">Sparade Kriterie-listor</a></li>
+                <li class="profilNavLi_1"><a href="profilSparKrit.php"><img src="check.png" height="120px" width="120px">Sparade Kriterie-listor</a></li>
                 <li class="profilNavLi_1"><a href="profilSparRes.html"><img src="paper.png" height="120px" width="120px">Sparade resor</a></li>
                 <li class="profilNavLi_1"><a href="profiI_inst.html"><img src="cogs.png" height="120px" width="136px">Profilinställningar</a></li>
             </ul>
