@@ -3,18 +3,13 @@
     <head>
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="style.css">
-		<script src="jquery.js"></script>
-		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
         <title>Horizon</title>
     </head>
     <body>
 
             <header>
-                <h1 id="criteria_heading">
-                    Kriterier
-                </h1>
+                <h1 id="criteria_heading"><a href="index.html">Horizon</a></h1>
             </header>
             <nav id="criteria_nav">
                 <h2>Meny</h2>
@@ -33,7 +28,23 @@
             <section>
                 <div id="criteria_box">
 					<form class="checkboxes" id="choose_criteria"> <!--VÄLJ LAND-->
-						<h2 id="choose_country">Välj kontinent</h2>
+						<h2 id="form_top_heading">Önskemål för resan</h2>
+						<p>
+							Här kan du fylla i alla de önskemål du har för din resa.
+							Därefter kan du spara önskemålen och/eller slumpa fram en resa som matchar dessa.
+							Du behöver inte fylla i någonting inom alla områdena, eller ens fylla i några
+							kriterier alls ifall du inte vill. Det går utmärkt att bara trycka på "slumpa"
+							direkt för att få en slumpmässigt framtagen resa.
+						</p>
+						<hr>
+						<h3 id="choose_country">Välj kontinent/land</h3>
+						<p>
+							Om du vet att du vill åka inom en särskild kontinent,
+							eller rent av redan vet ett land du vill åka till och
+							enbart behöver tips på städer, så kan du specificera
+							kontinent och/eller land här.
+						</p>
+						<h4 id="form_headings">Kontinent</h4>
 						<p>
 							<select>
 								<option name="no_continent_preference">Ingen preferens</option>
@@ -46,9 +57,7 @@
 								<option name="antarctica">Antarktis</option>
 							</select>
 						</p>
-						<p>
-							Välj land
-						</p>
+						<h4 id="form_headings">Land</h4>
 						<p>
 							<select>
 								<option name="no_country_preference">Ingen preferens</option>
@@ -62,11 +71,12 @@
 							</select>
 							<!--Viktigt att lägga in de länder som finns i scenario-->
 						</p>
-						<p>
-							Har du ingen särskild kontinent/land du vill åka till kan du gå vidare till nästa sida
-						</p>
+						<hr>
                     <!--ÄVENTYR-->
 						<h2 id="adventure">Äventyr</h2>
+						<p>
+							Kryssa i det du skulle kunna vara intresserad av.
+						</p>
 						<p>
 							<input type="checkbox" name="bergsklattring" id="bergsklattring" class="checkbox">
 							<label for="bergsklattring">Bergsklättring</label>
@@ -99,8 +109,12 @@
 							<input type="checkbox" name="dykning" id="dykning" class="checkbox">
 							<label for="dykning">Dykning</label>
 						</p>
+						<hr>
 					<!--AVSLAPPNING-->
 						<h2 id="relaxation">Avslappning</h2>
+						<p>
+							Kryssa i det du skulle kunna vara intresserad av.
+						</p>
 						<p>
 							<input type="checkbox" name="spa" id="spa" class="checkbox">
 							<label for="spa">Spa</label>
@@ -121,8 +135,12 @@
 							<input type="checkbox" name="meditation" id="meditation" class="checkbox">
 							<label for="meditation">Meditation</label>
 						</p>
+						<hr>
 					<!--KULTUR-->
 						<h2 id="culture">Kultur</h2>
+						<p>
+							Kryssa i det du skulle kunna vara intresserad av.
+						</p>
 						<p>
 							<input type="checkbox" name="sightseeing" id="sightseeing" class="checkbox">
 							<label for="sightseeing">Sightseeing</label>
@@ -147,10 +165,11 @@
 							<input type="checkbox" name="food_trip" id="food_trip" class="checkbox">
 							<label for="food_trip">Matresa</label>
 						</p>
+						<hr>
 					<!--KLIMAT-->
 						<h2 id="climate">Klimat</h2>
 						<p>
-							Kryssa i vilka väder du kan tänka dig.
+							Kryssa i de väder du kan tänka dig.
 						</p>
 						<p>
 							<input type="checkbox" name="sun" id="sun" class="checkbox">
@@ -187,8 +206,12 @@
 							<input type="checkbox" name="water" id="water" class="checkbox">
 							<label for="water">Närhet till vatten</label>
 						</p>
+						<hr>
 					<!--DISTANS-->
 						<h2 id="distance">Distans</h2>
+						<p>
+							Välj hur långt bort resmålet som längst får lov att ligga.
+						</p>
 						<p>
 							<select>
 								<option name="distance_1">1 m</option>
@@ -199,22 +222,27 @@
 						<p>
 							Karta.
 						</p>
+						<hr>
 					<!--BUDGET-->
 						<h2 id="budget">Budget</h2>
 						<p>
-							<label for="travel_cost">Maxkostnad för transport</label>
-							<input type="text" name="travel_cost" id="travel_cost" class="checkbox">			
+							<label for="travel_cost">Maxkostnad för transport (kr)</label>
+							<input type="text" name="travel_cost" id="travel_cost" class="checkbox" placeholder="Ange antal kr">			
 						</p>
 						<p>
-							<label for="living_cost">Maxkostnad för boende</label>
-							<input type="text" name="living_cost" id="living_cost" class="checkbox">
+							<label for="living_cost">Maxkostnad för boende (kr)</label>
+							<input type="text" name="living_cost" id="living_cost" class="checkbox" placeholder="Ange antal kr">
 						</p>
 						<p>
-							<label for="cost_per_day">Max levnadskostnad per dag</label>
-							<input type="text" name="cost_per_day" id="cost_per_day" class="checkbox">
+							<label for="cost_per_day">Max levnadskostnad per dag (kr)</label>
+							<input type="text" name="cost_per_day" id="cost_per_day" class="checkbox" placeholder="Ange antal kr">
 						</p>
+						<hr>
 					<!--BOENDE-->
 						<h2 id="lodging">Boende</h2>
+						<p>
+							Välj de boendetyper du kan tänka dig.
+						</p>
 						<p>
 							<input type="checkbox" name="hotel" id="hotel" class="checkbox">
 							<label for="hotel">Hotell</label>
@@ -239,8 +267,12 @@
 							<input type="checkbox" name="bungalow" id="bungalow" class="checkbox">
 							<label for="bungalow">Bungalow</label>
 						</p>
+						<hr>
 					<!--TRANSPORTMEDEL-->
 						<h2 id="transport">Transportmedel</h2>
+						<p>
+							Välj vilka typer av transportmedel du kan tänka dig.
+						</p>
 						<p>
 							<input type="checkbox" name="airplane" id="airplane" class="checkbox">
 							<label for="airplane">Flygplan</label>
@@ -257,8 +289,10 @@
 							<input type="checkbox" name="other_transport" id="other_transport" class="checkbox">
 							<label for="other_transport">Annat/eget transportmedel</label>
 						</p>
+						<hr>
 					</form>
-					<input type="button" value="Klar">
+					<input type="button" value="Ta fram resa">
+					<input type="button" value="Spara & ta fram resa">
 				</div>
             </section>
             <footer>

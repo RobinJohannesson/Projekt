@@ -121,7 +121,7 @@ footer {
 	border-radius: 15px;
 	box-shadow: 0px 0px 40px 5px rgba(50,50,50,1);
 	margin-left: 5%;
-	margin-top: 30px;
+	margin-top: 100px;
 }
 
 .criteria_links {
@@ -131,14 +131,28 @@ footer {
 
 #criteria_box {
     background-color: #F3F3F3;
-    width: 600px;
-    height: 600px;
-    margin-left: 35%;
+    width: 700px;
+    height: 700px;
+    margin-left: 30%;
     padding: 15px;
 	border-radius: 15px;
 	box-shadow: 0px 0px 40px 5px rgba(50,50,50,1);
 	overflow: auto;
 	margin-top: 30px;
+}
+
+#form_top_heading {
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 40px;
+}
+
+#form_headings {
+	margin-bottom: 0px;
+}
+
+#choose_country {
+	margin-bottom: 0px;
 }
 
 form {
@@ -455,6 +469,15 @@ label {
 	height: 600px;
 }
 
+#city_name {
+	font-size: 40px;
+}
+
+#back_button {
+	color: white;
+	float: left;
+}
+
 .img_cities {
 	width: 400px;
 }
@@ -468,6 +491,8 @@ label {
 	width: 450px;
 	float: right;
 	height: 400px;
+	border-radius: 15px;
+	border: 1px solid black;
 }
 
 /*Spara kriterier*/
