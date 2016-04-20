@@ -53,7 +53,7 @@ table {
 
 body {
     margin: auto;
-    background-image: url(/img/Oceanview.jpg);
+    background-image: url(img/Oceanview.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /*to do*/
@@ -303,17 +303,17 @@ label {
 }
 
 #widget-first {
-    background-image: url(/img/Kairo.jpg);
+    background-image: url(img/Kairo.jpg);
     background-size: cover;
 }
 
 #widget-second {
-    background-image: url(/img/Alexandria.jpg);
+    background-image: url(img/Alexandria.jpg);
     background-size: cover;
 }
 
 #widget-third {
-    background-image: url(/img/Luxor.jpg);
+    background-image: url(img/Luxor.jpg);
     background-size: cover;
 }
 
@@ -324,7 +324,7 @@ label {
 /*Visa länder*/
 
 .cloud{
-    background-image: url(/img/cloud.jpg);
+    background-image: url(img/cloud.jpg);
     background-size: cover;
 }
 
@@ -354,17 +354,17 @@ label {
 }
 
 #first-country-widget{
-    background-image: url(/img/egypt-country.jpg);
+    background-image: url(img/egypt-country.jpg);
     background-size: cover;
 }
 
 #second-country-widget{
-    background-image: url(/img/schweiz-country.jpg);
+    background-image: url(img/schweiz-country.jpg);
     background-size: cover;
 }
 
 #third-country-widget{
-    background-image: url(/img/grekland-country.jpg);
+    background-image: url(img/grekland-country.jpg);
     background-size: cover;
 }
 
@@ -466,7 +466,7 @@ label {
     width: 800px;
 }
 #savedTrip {
-    background-image:url(/img/egypt_pyramid.jpg);
+    background-image:url(img/egypt_pyramid.jpg);
     background-size: cover;
     margin-left: 150px;
     margin-top: 20px;
@@ -475,7 +475,7 @@ label {
     height: 150px;
 }
 #savedTrip2 {
-    background-image: url(/img/eiffel-tower.jpg);
+    background-image: url(img/eiffel-tower.jpg);
     background-size: cover;
     margin-left: 180px;
     margin-top: 20px;
@@ -484,7 +484,7 @@ label {
     height: 150px;
 }
 #savedTrip3 {
-    background-image: url(/img/chamonix.jpg);
+    background-image: url(img/chamonix.jpg);
     background-size: cover;
     margin-left: 150px;
     margin-top: 80px;
