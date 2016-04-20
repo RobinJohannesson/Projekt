@@ -342,11 +342,19 @@ label {
     background-size: cover;
 }
 
+#container-country {
+    border-radius: 15px;
+	margin: 30px auto 0px auto;
+    min-height: 180px;
+    padding: 30px;
+	max-width: 1680px;
+}
+
 .country-box {
     width: 450px;
     height: 525px;
     float: left;
-    margin: 0px 25px;
+    margin: 0px 50px;
 }
 
 .country-box a{
@@ -386,14 +394,6 @@ label {
     height: 50px;
     text-align: center;
     margin-top: 15px;
-}
-
-#container-country {
-    border-radius: 15px;
-	margin: 30px auto 0px auto;
-    min-height: 180px;
-    padding: 30px;
-	max-width: 1530px;
 }
 
 /*Profilsida*/
