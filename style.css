@@ -250,11 +250,15 @@ label {
 
 .box {
     width: 400px;
-    border-radius: 15px;
     padding: 20px;
-    margin: 45px auto 45px;
+    margin: 45px auto;
 }
 
+.box p{
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
 
 /*Visa resor*/
 
@@ -587,6 +591,7 @@ label {
 }
 
 /*Login & Register*/
+
 #login_box {
     box-shadow: none;
     float: left;
