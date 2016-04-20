@@ -358,7 +358,7 @@ label {
     width: 450px;
     border-radius: 50%;
     animation-name: show-country-open;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: cubic-bezier(0,1.31,.43,1);
 }
 
@@ -380,6 +380,7 @@ label {
 .country-text {
     height: 50px;
     text-align: center;
+    margin-top: 15px;
 }
 
 #container-country {
