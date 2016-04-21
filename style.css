@@ -695,6 +695,8 @@ input[type=submit] {
     position: relative;
     display: inline-block;
     float: right;
+    margin-top: 16px;
+    height: 40px;
 }
 
 .dropdown_content {
@@ -726,14 +728,35 @@ input[type=submit] {
     background: rgba(0, 0, 0, 0.2);
 }
 
-.breadcrumb li {
-    margin-left: 15px;
+.arrow_for_dropdown{
+    width: 40px;
+    height: 40px;
     float: left;
+}
+
+@keyframes bounce_dropdown_arrow {
+	0%, 100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-5px);
+	}
+}
+
+.dropdown:hover .arrow_for_dropdown{
+    animation: bounce_dropdown_arrow 0.5s;
 }
 
 .container {
     position: relative;
     display: inline-block;
     float: left;
-    margin-top: 29px;
+    margin-top: 44px;
+}
+
+
+.breadcrumb li {
+    margin-left: 15px;
+    float: left;
 }
