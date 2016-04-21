@@ -299,7 +299,7 @@ label {
     height: 260px;
     width: 200px;
     float: left;
-    margin: 0 30px;
+    margin: 45px 30px 0px 30px;
     animation-name: widget-content-open;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -310,14 +310,15 @@ label {
 }
 
 #widget-content-first {
+    margin-top: 45px;
 }
 
 #widget-content-second {
-    margin-top: 50px;
+    margin-top: 95px;
 }
 
 #widget-content-third {
-    margin-top: 100px;
+    margin-top: 145px;
 }
 
 .widget {
