@@ -169,12 +169,14 @@ footer {
 
 /* Kriterie-dokument*/
 
-#criteria_heading {
-    margin-bottom: 50px;
+#criteria_body {
+	background-image: url(img/criteria_mountain.jpg);
+	background-size: cover;
 }
 
 #criteria_nav {
-    background-color: #F3F3F3;
+    /*background-color: #F3F3F3;*/
+	background: rgba(0, 0, 0, 0.15);
     width: 300px;
     height: auto;
     float: left;
@@ -191,7 +193,8 @@ footer {
 }
 
 #criteria_box {
-    background-color: #F3F3F3;
+    /*background-color: #F3F3F3;*/
+	background: rgba(0, 0, 0, 0.15);
     width: 700px;
     height: 700px;
     margin-left: 30%;
@@ -204,16 +207,12 @@ footer {
 
 #form_top_heading {
 	text-align: center;
-	margin-bottom: 0px;
 	font-size: 40px;
 }
 
 #form_headings {
-	margin-bottom: 0px;
-}
-
-#choose_country {
-	margin-bottom: 0px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
 
 form {
@@ -230,7 +229,7 @@ form {
 
 .criteria_listitem {
     font-size: 25px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .checkboxes {
@@ -240,6 +239,11 @@ form {
 
 .checkbox {
     cursor: pointer;
+	margin: 10px;
+}
+
+.criteria_headings {
+	margin-bottom: 10px;
 }
 
 label {
