@@ -68,6 +68,7 @@ body {
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-radius: 15px;
 }
 #wrapper_nr2{
     margin: auto;
@@ -718,4 +719,16 @@ input[type=submit] {
 
 .dropdown:hover .dropbtn {
     background: rgba(0, 0, 0, 0.2);
+}
+
+.breadcrumb li {
+    margin-left: 15px;
+    float: left;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 29px;
 }
