@@ -354,7 +354,7 @@ label {
     width: 450px;
     height: 525px;
     float: left;
-    margin: 0px 50px;
+    margin: 0px 40px;
 }
 
 .country-box a{
@@ -660,7 +660,7 @@ input[type=submit] {
     width: auto;
     cursor: pointer;
     font-size: 20px;
-    padding: 5px;
+    padding: 4px;
 }
 
 .avatar-img{
