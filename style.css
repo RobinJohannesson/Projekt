@@ -69,6 +69,7 @@ body {
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-radius: 15px;
 }
 #wrapper_nr2 {
     margin: auto;
@@ -180,12 +181,14 @@ footer {
 
 /* Kriterie-dokument*/
 
-#criteria_heading {
-    margin-bottom: 50px;
+#criteria_body {
+	background-image: url(img/criteria_mountain.jpg);
+	background-size: cover;
 }
 
 #criteria_nav {
-    background-color: #F3F3F3;
+    /*background-color: #F3F3F3;*/
+	background: rgba(0, 0, 0, 0.15);
     width: 300px;
     height: auto;
     float: left;
@@ -202,7 +205,8 @@ footer {
 }
 
 #criteria_box {
-    background-color: #F3F3F3;
+    /*background-color: #F3F3F3;*/
+	background: rgba(0, 0, 0, 0.15);
     width: 700px;
     height: 700px;
     margin-left: 30%;
@@ -215,16 +219,12 @@ footer {
 
 #form_top_heading {
 	text-align: center;
-	margin-bottom: 0px;
 	font-size: 40px;
 }
 
 #form_headings {
-	margin-bottom: 0px;
-}
-
-#choose_country {
-	margin-bottom: 0px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
 
 form {
@@ -241,7 +241,7 @@ form {
 
 .criteria_listitem {
     font-size: 25px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .checkboxes {
@@ -251,6 +251,11 @@ form {
 
 .checkbox {
     cursor: pointer;
+	margin: 10px;
+}
+
+.criteria_headings {
+	margin-bottom: 10px;
 }
 
 label {
@@ -290,45 +295,46 @@ label {
     width: 600px;
 }
 
-#widget-box {
+#widget_box {
     width: 780px;
     height: auto;
     margin-right: 30px;
     float: right;
 }
 
-#widget-head {
+#widget_head {
     text-align: center;
 }
 
-@keyframes widget-content-open {
+@keyframes widget_content_open {
     from {margin-left: -150px;}
     to {width: 200px;}
 }
 
-.widget-content {
+.widget_content {
     height: 260px;
     width: 200px;
     float: left;
-    margin: 0 30px;
-    animation-name: widget-content-open;
+    margin: 45px 30px 0px 30px;
+    animation-name: widget_content_open;
     animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
-.widget-content a {
+.widget_content a {
     text-decoration: none;
 }
 
-#widget-content-first {
+#widget_content_first {
+    margin-top: 45px;
 }
 
-#widget-content-second {
-    margin-top: 50px;
+#widget_content_second {
+    margin-top: 95px;
 }
 
-#widget-content-third {
-    margin-top: 100px;
+#widget_content_third {
+    margin-top: 145px;
 }
 
 .widget {
@@ -337,22 +343,22 @@ label {
     width: 200px;
 }
 
-#widget-first {
+#widget_first {
     background-image: url(img/Kairo.jpg);
     background-size: cover;
 }
 
-#widget-second {
+#widget_second {
     background-image: url(img/Alexandria.jpg);
     background-size: cover;
 }
 
-#widget-third {
+#widget_third {
     background-image: url(img/Luxor.jpg);
     background-size: cover;
 }
 
-#widget-text {
+#widget_text {
     text-align: center;
     margin-top: 15px;
 }
@@ -364,7 +370,7 @@ label {
     background-size: cover;
 }
 
-#container-country {
+#container_country {
     border-radius: 15px;
 	margin: 30px auto 0px auto;
     min-height: 180px;
@@ -372,47 +378,47 @@ label {
 	max-width: 1680px;
 }
 
-.country-box {
+.country_box {
     width: 450px;
     height: 525px;
     float: left;
     margin: 0px 40px;
 }
 
-.country-box a{
+.country_box a{
     text-decoration: none;
 }
 
-@keyframes show-country-open {
+@keyframes show_country_open {
     from {width: 0px; height: 0px;}
     to {width: 450px; height 450px;}
 }
 
-.country-widget {
+.country_widget {
     height: 450px;
     width: 450px;
     border-radius: 50%;
-    animation-name: show-country-open;
+    animation-name: show_country_open;
     animation-duration: 3s;
     animation-timing-function: cubic-bezier(0,1.31,.43,1);
 }
 
-#first-country-widget{
-    background-image: url(img/egypt-country.jpg);
+#first_country_widget{
+    background-image: url(img/egypt_country.jpg);
     background-size: cover;
 }
 
-#second-country-widget{
-    background-image: url(img/schweiz-country.jpg);
+#second_country_widget{
+    background-image: url(img/schweiz_country.jpg);
     background-size: cover;
 }
 
-#third-country-widget{
-    background-image: url(img/grekland-country.jpg);
+#third_country_widget{
+    background-image: url(img/grekland_country.jpg);
     background-size: cover;
 }
 
-.country-text {
+.country_text {
     height: 50px;
     text-align: center;
     margin-top: 15px;
@@ -680,15 +686,15 @@ input[type=submit] {
     padding: 4px;
 }
 
-.avatar-img{
-    background-image: url(img/deadpool-avatar.png);
+.avatar_img{
+    background-image: url(img/deadpool_avatar.png);
     background-size: cover;
     height: 40px;
     width: 40px;
     float: right;
 }
 
-.dropdown-name{
+.dropdown_name{
     float: left;
 }
 
@@ -696,9 +702,11 @@ input[type=submit] {
     position: relative;
     display: inline-block;
     float: right;
+    margin-top: 16px;
+    height: 40px;
 }
 
-.dropdown-content {
+.dropdown_content {
     display: none;
     position: absolute;
     background: rgba(0, 0, 0, 0.15);
@@ -707,7 +715,7 @@ input[type=submit] {
     right: 0;
 }
 
-.dropdown-content a {
+.dropdown_content a {
     color: white;
     padding: 15px;
     text-decoration: none;
@@ -715,14 +723,47 @@ input[type=submit] {
     font-size: 20px;
 }
 
-.dropdown-content a:hover {
+.dropdown_content a:hover {
     background: rgba(0, 0, 0, 0.15);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown_content {
     display: block;
 }
 
 .dropdown:hover .dropbtn {
     background: rgba(0, 0, 0, 0.2);
+}
+
+.arrow_for_dropdown{
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+@keyframes bounce_dropdown_arrow {
+	0%, 100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-5px);
+	}
+}
+
+.dropdown:hover .arrow_for_dropdown{
+    animation: bounce_dropdown_arrow 0.5s;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-top: 44px;
+}
+
+
+.breadcrumb li {
+    margin-left: 15px;
+    float: left;
 }
