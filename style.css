@@ -698,6 +698,10 @@ input[type=submit] {
     float: left;
 }
 
+.dropdown_name p {
+    color: white;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
