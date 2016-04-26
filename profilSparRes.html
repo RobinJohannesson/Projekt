@@ -3,15 +3,17 @@
     <head>
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
         <link rel="icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
         <title>Horizon sparade resor</title>
     </head>
-    <body>
+    <body id="sparResa_body">
         <header>
             <h1><a href="index.html">Horizon</a></h1>
-            <h2 class="under-rubrik-text">Du väljer kriterier, Vi tar fram resan</h2>
+            <div id="headSubText">
+                <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
+            </div>
 
             <div class="dropdown">
             <div class="dropbtn">
@@ -30,23 +32,26 @@
         </header>
         <div id="wrapper_nr3">
             <div id="profSectDiv">
-
+                <div class="page_descr"><h2>Sparade Resor</h2></div>
+                
                 <nav id="profilNav2">
                     <div id="descriptSparRes">
                         <p>Här kan du spara de resor som slumpats om du vill leta vidare!</p>
                     </div>
                     <ul id="profilNavUl">
-                        <li class="profilNavLi_2">&middot;<a href="index.html">Start</a></li>
-                        <li class="profilNavLi_2">&middot;<a href="profilSparKrit.html">Kriterie-listor</a></li>
-                        <li class="profilNavLi_2">&middot;<a href="profiI_inst.html">Profilinställningar</a></li>
+                        <li class="profilNavLi_2">&middot;<a class="a_black" href="index.html">Start</a></li>
+                        <li class="profilNavLi_2">&middot;<a class="a_black" href="profilSparKrit.html">Kriterie-listor</a></li>
+                        <li class="profilNavLi_2">&middot;<a class="a_black" href="profiI_inst.html">Profilinställningar</a></li>
                     </ul>
                 </nav>
-                <div  id="mainContent">
-                    <div id="savedTrip">
-                    </div>
-                    <div id="savedTrip2">
-                    </div>
-                    <div id="savedTrip3">
+                <div id="mainContent">
+                    <div class="third-effect">
+                        <img class="savedTrip" src="img/eiffel_tornet.jpg">
+                        <a href="#" class="info" title="Full Image">
+                            <div class="mask">
+                                Paris
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div id="countryDesc">
