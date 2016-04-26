@@ -82,7 +82,18 @@ body {
 #wrapper_nr3 {
     margin: auto;
     height: auto;
-    width: 850px;
+    width: 1000px;
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 40px 5px rgba(50, 50, 50, 1);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#wrapper_nr4 {
+    margin: auto;
+    height: auto;
+    width: 1000px;
     background: rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 40px 5px rgba(50, 50, 50, 1);
     border-radius: 15px;
@@ -96,7 +107,12 @@ header {
     width: 100%;
     background: rgba(0, 0, 0, 0.15);
 }
-
+#headSubText{
+    height: 30px;
+    width: 600px;
+    margin-left: 380px;
+    margin-top: 20px;
+}
 header a {
     color: white;
 }
@@ -106,14 +122,14 @@ h1 {
     margin: 0;
     padding-top: 20px;
     color: white;
-    font-size: 66px;
+    font-size: 56px;
     font-family: "Cinzel";
     text-decoration: underline;
 }
 
 h2 {
     color: white;
-    font-size: 30px;
+    font-size: 27px;
     font-family: "Cinzel";
 }
 
@@ -144,7 +160,7 @@ p {
 
 #indexNavUl {
     list-style-type: none;
-    margin: 0 auto;
+    margin-top: 90px;
     text-align: center;
 }
 
@@ -152,21 +168,22 @@ p {
     color: white;
     display: inline;
     font-size: 60px;
-    margin-right: 65px;
+    margin-right: 45px;
 }
 
 .indexNavLi_2 {
     color: white;
     display: inline;
-    margin-right: 65px;
+    margin-right: 45px;
     font-size: 35px;
 }
 
 .indexNavA {
     color: white;
     display: inline;
-    margin-right: 65px;
-    font-size: 35px;
+    margin-right: 45px;
+    font-size: 25px;
+    font-family: "Cinzel";
 }
 
 section {
@@ -376,7 +393,7 @@ label {
 
 @keyframes show_country_open {
     from {width: 0px; height: 0px;}
-    to {width: 450px; height 450px;}
+    to {width: 450px; height: 450px;}
 }
 
 .country_widget {
@@ -395,19 +412,18 @@ label {
 }
 
 /*Profilsida*/
+#sparResa_body {
+	background-image:url(img/mountain_sky_fog_clouds_wallpaper.jpg);
+	background-size: cover;
+}
 
-.headerProf {
+/*.headerProf {
     text-align: center;
     height: 180px;
     width: 100%;
     background: rgba(0, 0, 0, 0.15);
     margin-bottom: 40px;
-}
-
-#profilWrapper {
-    width: auto;
-    height: auto;
-}
+}*/
 
 #profSect {
     /*margin: 0 auto;*/
@@ -416,46 +432,46 @@ label {
     width: 100%;
     margin-top: 25px;
 }
-
-#profKritSect {
-    width: 100%;
-    height: 450px;
-}
-
 #profSectDiv {
     float: left;
     margin: auto;
     margin-bottom: 20px;
-    width: 800px;
+    width: 1000px;
     height: 100%;
 }
-
+.page_descr{
+    margin-top: 20px;
+    width: 250px;
+}
 #descriptSparRes {
     float: left;
     /*margin-left: 40px;*/
     margin-bottom: 40px;
-    height: 120px;
+    height: 90px;
     width: 150px;
     border-bottom: 1px solid;
 }
 #profilNav1 {    
-    margin: auto;
-    width: 800px;
+    width: 180px;
     height: 450px;
-    text-align: center;
+    float: left;
+    border-top: 1px solid;
+    margin-top: 40px;
 }
 #profilNav2 {
     float: left;
     margin-left: 10px;
+    margin-top: 50px;
     width: 150px;
-    height: 250px;
+    height: 220px;
     text-align: left;
     border-bottom: 1px solid;
     
 }
 #profilNavUl {
     float: left;
-    margin-top: -10px;
+    margin-top: 10px;
+    
 }
 .profilNavLi_1 {
     display: inline;
@@ -474,14 +490,43 @@ label {
 .profilNavli_3 {
     float: left;
 }
+.a_black{
+    color: black;
+}
 #mainContent {
     float: left;
     height: auto;
-    width: 300px;
+    margin-left: 100px;
+    width: 200px;
+    margin-top: 50px;
 }
+
+.third-effect .mask {
+   opacity: 0;
+   overflow:visible;
+   border:100px solid rgba(0,0,0,0.7);
+   box-sizing:border-box;
+   transition: all 0.4s ease-in-out;
+}
+
+.third-effect a.info {
+   position:relative;
+   top:-10px; /* Center the link */
+   opacity: 0;
+   transition: opacity 0.5s 0s ease-in-out;
+}
+
+.third-effect:hover .mask {
+   opacity: 1;
+   border:100px solid rgba(0,0,0,0.7);
+}
+
+.third-effect:hover a.info {
+   opacity:1;
+   transition-delay: 0.3s;
+}
+
 #savedTrip {
-    background-image:url(img/egypt_pyramid.jpg);
-    background-size: cover;
     margin-left: 100px;
     margin-top: 10px;
     float: left;
@@ -490,13 +535,13 @@ label {
     border-radius: 50%;
 }
 #savedTrip2 {
-    background-image: url(img/eiffel-tower.jpg);
+    background-image: url(img/egypt_pyramid.jpg);
     background-size: cover;
     margin-left: 100px;
     margin-top: 80px;
     float: left;
     width: 170px;
-    height: 170px;
+    height:170px;
     border-radius: 50%;
 }
 #savedTrip3 {
@@ -513,6 +558,8 @@ label {
     float: right;
     width: 200px;
     height: 300px;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 
 /*Visa städer*/
@@ -587,29 +634,32 @@ label {
 }
 
 /*Spara kriterier*/
-#profKritSect_Surround{
-    background: rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 40px 5px rgba(50, 50, 50, 1);
-    width: 100%;
-    height: 450px;
-    margin: auto;
+
+.mainContent_2 {
+    height: 410px;
+    width: 500px;
+    background-color: azure;
+   
+}
+mainContent_3{
+    
 }
 #savedKritSubHeader {
-    float: right;
-    margin-right: 440px;
+    margin: auto;
+    margin-right: 100px;
     margin-bottom: 20px;
-    height: 70px;
+    height: 400px;
     width: 500px;
     border-bottom: 1px solid;
 }
 #savedKritList {
     float: left;
     margin-top: 20px;
-    margin-left: 290px;
+    margin-left: 140px;
     height: 300px;
-    width: 300px;
+    width: 380px;
     overflow: scroll;
-    background-color: cadetblue;
+    background: rgba(0, 0, 0, 0.15);
 }
 #savedKritListCheckbox {
     display: inline;
