@@ -343,21 +343,6 @@ label {
     width: 200px;
 }
 
-#widget_first {
-    background-image: url(img/Kairo.jpg);
-    background-size: cover;
-}
-
-#widget_second {
-    background-image: url(img/Alexandria.jpg);
-    background-size: cover;
-}
-
-#widget_third {
-    background-image: url(img/Luxor.jpg);
-    background-size: cover;
-}
-
 #widget_text {
     text-align: center;
     margin-top: 15px;
@@ -401,21 +386,6 @@ label {
     animation-name: show_country_open;
     animation-duration: 3s;
     animation-timing-function: cubic-bezier(0,1.31,.43,1);
-}
-
-#first_country_widget{
-    background-image: url(img/egypt_country.jpg);
-    background-size: cover;
-}
-
-#second_country_widget{
-    background-image: url(img/schweiz_country.jpg);
-    background-size: cover;
-}
-
-#third_country_widget{
-    background-image: url(img/grekland_country.jpg);
-    background-size: cover;
 }
 
 .country_text {
@@ -719,8 +689,6 @@ input[type=submit] {
 }
 
 .avatar_img{
-    background-image: url(img/deadpool_avatar.png);
-    background-size: cover;
     height: 40px;
     width: 40px;
     float: right;
@@ -728,6 +696,10 @@ input[type=submit] {
 
 .dropdown_name{
     float: left;
+}
+
+.dropdown_name p{
+    color: white;
 }
 
 .dropdown {
