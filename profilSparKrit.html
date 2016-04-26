@@ -3,18 +3,21 @@
     <head>
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
         <link rel="icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
         <title>Horizon Sparade Kriterier</title>
     </head>
     <body>
 
-        <div id="profilWrapper">
-            <header class="headerProf">
-                <h1><a href="index.html">Horizon</a></h1>
+        
+            <header>
+            <h1><a href="index.html">Horizon</a></h1>
+            <div id="headSubText">
                 <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
-                <div class="dropdown">
+            </div>
+
+            <div class="dropdown">
             <div class="dropbtn">
                 <img src="img/arrow_dropdown.png" class="arrow_for_dropdown">
                 <div class="dropdown_name">
@@ -28,21 +31,26 @@
                 <a href="#">Logga ut</a>
             </div>
         </div>
-            </header>
-            <div id="profKritSect_Surround">
-                <section id="profKritSect">
+        </header>
+        <div id="wrapper_nr4">
                     <nav id="profilNav2">
-                        <h2>Sparade kriterie-listor:</h2>
-                        <ul id="profilNavUl">
+                        <h2>Listor:</h2>
+                        <ul class="profilNavUl">
                             <li class="profilNavLi_3">Äventyr i värme</li>
                             <li class="profilNavLi_3">Värme</li>
                             <li class="profilNavLi_3">Barnresor</li>
                             <li class="profilNavLi_3">Shoppingresa</li>
                         </ul>
+                        <ul class="profilNavUl">
+                            <li class="profilNavLi_3"><a href="index.html">Start</a></li>
+                            <li class="profilNavLi_3"><a href="profilSparRes.html">Sparade Resor</a></li>
+                            <li class="profilNavLi_3"><a href="profiI_inst.html">Inställningar</a></li>
+                        </ul>
                     </nav>
-                    <div id="savedKritSubHeader">
-                        <h3>Äventyr i värme</h3>
-                    </div>
+            <div id="mainContent_2">
+                <div id="savedKritSubHeader">
+                    <h3>Äventyr i värme</h3>
+                </div>
                     <div id="savedKritList">
 
                         <form class="checkboxes">
@@ -125,10 +133,8 @@
                     </form>
                     
                 </div>
-            </section>
+            </div>
             <footer>
             </footer>
-        </div>
-        </div>
      </body>
 </html>
