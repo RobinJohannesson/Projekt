@@ -343,18 +343,6 @@ label {
     width: 200px;
 }
 
-#widget_first {
-    background-size: cover;
-}
-
-#widget_second {
-    background-size: cover;
-}
-
-#widget_third {
-    background-size: cover;
-}
-
 #widget_text {
     text-align: center;
     margin-top: 15px;
@@ -398,18 +386,6 @@ label {
     animation-name: show_country_open;
     animation-duration: 3s;
     animation-timing-function: cubic-bezier(0,1.31,.43,1);
-}
-
-#first_country_widget{
-    background-size: cover;
-}
-
-#second_country_widget{
-    background-size: cover;
-}
-
-#third_country_widget{
-    background-size: cover;
 }
 
 .country_text {
@@ -713,8 +689,6 @@ input[type=submit] {
 }
 
 .avatar_img{
-    background-image: url(img/deadpool_avatar.png);
-    background-size: cover;
     height: 40px;
     width: 40px;
     float: right;
