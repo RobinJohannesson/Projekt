@@ -344,17 +344,14 @@ label {
 }
 
 #widget_first {
-    background-image: url(img/Kairo.jpg);
     background-size: cover;
 }
 
 #widget_second {
-    background-image: url(img/Alexandria.jpg);
     background-size: cover;
 }
 
 #widget_third {
-    background-image: url(img/Luxor.jpg);
     background-size: cover;
 }
 
