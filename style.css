@@ -401,17 +401,14 @@ label {
 }
 
 #first_country_widget{
-    background-image: url(img/egypt_country.jpg);
     background-size: cover;
 }
 
 #second_country_widget{
-    background-image: url(img/schweiz_country.jpg);
     background-size: cover;
 }
 
 #third_country_widget{
-    background-image: url(img/grekland_country.jpg);
     background-size: cover;
 }
 
@@ -725,6 +722,10 @@ input[type=submit] {
 
 .dropdown_name{
     float: left;
+}
+
+.dropdown_name p{
+    color: white;
 }
 
 .dropdown {
