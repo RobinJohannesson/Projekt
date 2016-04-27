@@ -4,10 +4,9 @@ session_start();
 class User {
 
 	private $userInfo = array();
-	private	$dbname = "NewHorizons";
 	private $connection;
 	
-	function __construct($userInfo) {
+	public function __construct($userInfo) {
 		$this->userInfo = $userInfo;
 	}
 	
@@ -31,17 +30,18 @@ class User {
 		
 		$result = $query->get_result();
 
-		$_SESSION["Logged In"] = "Logged In";
-		
-		/*if (!$result) {
-			die(mysqli_error($this->connection));
-		} */
-		
+		$_SESSION["Logged In"] = "Logged In"; //Ta bort mellan slag mellan Logged In
+
 		if(mysqli_num_rows($result) == 1) {
 			return true;
 		} else {
 			return false;
-		}		
+		}
+
+	}
+
+	public function logOut() {
+		unset($_SESSION['Logged In']); //Ta bort mellan slag
 	}
 		
 }
