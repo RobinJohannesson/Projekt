@@ -118,12 +118,7 @@ header {
     width: 100%;
     background: rgba(0, 0, 0, 0.15);
 }
-#headSubText{
-    height: 30px;
-    width: 600px;
-    margin-left: 380px;
-    margin-top: 20px;
-}
+
 header a {
     color: white;
 }
@@ -275,6 +270,7 @@ form {
 .checkboxes {
     text-align: left;
     font-size: 20px;
+    border-radius: 0px;
 }
 
 .checkbox {
@@ -452,12 +448,12 @@ label {
 }
 .page_descr{
     margin-top: 20px;
-    width: 250px;
+    width: 260px;
 }
 #descriptSparRes {
     float: left;
     /*margin-left: 40px;*/
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     height: 90px;
     width: 150px;
     border-bottom: 1px solid;
@@ -467,20 +463,28 @@ label {
     height: 450px;
     float: left;
     border-top: 1px solid;
-    margin-top: 40px;
+    margin-top: 53px;
 }
 #profilNav2 {
     float: left;
     margin-left: 10px;
     margin-top: 50px;
     width: 150px;
+    height: 110px;
+    text-align: left;
+    /*border-bottom: 1px solid;*/
+}
+#profilNav25{
+   float: left;
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 150px;
     height: 220px;
     text-align: left;
-    border-bottom: 1px solid;
-    
+    border-bottom: 1px solid; 
 }
-#profilNavUl {
-    float: left;
+.profilNavUl {
+    /*float: left;*/
     margin-top: 10px;
     margin-left: 10px;
     list-style:disc;
@@ -668,10 +672,10 @@ label {
 /*Spara kriterier*/
 
 .mainContent_2 {
+    margin: auto;
     height: 410px;
-    width: 500px;
-    background-color: azure;
-   
+    width: 380px;
+    margin-top: 50px;
 }
 #mainContent_3{
     float: right;
@@ -682,20 +686,18 @@ label {
 }
 #savedKritSubHeader {
     margin: auto;
-    margin-right: 100px;
-    margin-bottom: 20px;
-    height: 400px;
-    width: 500px;
+    /*margin-right: 100px;
+    margin-bottom: 20px;*/
+    height: 35px;
+    width: 280px;
     border-bottom: 1px solid;
 }
 #savedKritList {
     float: left;
     margin-top: 20px;
-    margin-left: 140px;
     height: 300px;
     width: 380px;
-    overflow: scroll;
-    background: rgba(0, 0, 0, 0.15);
+    overflow-x: hidden;
 }
 #savedKritListCheckbox {
     display: inline;
