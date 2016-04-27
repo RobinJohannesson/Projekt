@@ -35,10 +35,35 @@
                     <ul id="profilNavUl">
                         <li class="profilNavLi_3"><a href="profilSparKrit.html">Sparade Kriterie-listor</a></li>
                         <li class="profilNavLi_3"><a href="profilSparRes.html">Sparade resor</a></li>
+                        
                         <li class="profilNavLi_3"><a href="index.html">Start</a></li>
                     </ul>
                 </nav>
-            <div id="mainContent_3"></div>
+            <div id="mainContent_3">
+                <form action="action.php" method="post" id="inst-form">
+                    
+                    <label for="edit_password">Nytt lösenord:</label>
+                    <input type="text" id="edit_password" name="password" placeholder="Nytt lösenord:">
+                    
+                    <label for="confirm_password">Bekräfta lösenord:</label>
+                    <input type="text" id="confirm_password" name="password" placeholder="Bekräfta lösenord:">
+                    
+                    <label for="edit_mail">Ny mailadress:</label>
+                    <input type="text" id="edit_mail" name="email" placeholder="Ny mailadress:">
+                    
+                    <label for="edit_username">Nytt användarnamn:</label>
+                    <input type="text" id="edit_username" name="Usernamne" placeholder="Nytt användarnamn:">
+  
+                    <label for="edit_firstName">Nytt förnamn:</label>
+                    <input type="text" id="edit_firstName" name="firstName" placeholder="Nytt förnamn:">
+
+                    <label for="edit_lastName">Nytt efternamn:</label>
+                    <input type="text" id="edit_lastName" name="lastName" placeholder="Nytt efternamn:">
+                    
+                    <input class="btn_2" type="submit" value="spara ändringar" name="btn">
+                </form>
+            
+            </div>
             <footer>
             </footer>
         </div>
