@@ -148,8 +148,8 @@ p {
     font-size: 17px;
 }
 
-.under-rubrik-text{
-    margin-top: 15px;
+.under_rubrik_text{
+    margin-top: 13px;
 }
 
 #indexNav {
@@ -504,17 +504,16 @@ label {
 .third-effect .mask {
     opacity: 0;
     overflow: visible;
-    border: 85px solid rgba(0,0,0,0.7);
     border-radius: 50%;
     box-sizing: border-box;
     transition: all 0.4s ease-in-out;
     width: 170px;
     height: 170px;
-    text-align: center;
 }
 
 .third-effect .mask p {
     color: white;
+    text-align: center;
 }
 
 .third-effect{
