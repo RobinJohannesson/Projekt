@@ -792,7 +792,7 @@ input[type=submit] {
     position: relative;
     display: inline-block;
     float: right;
-    margin-top: 16px;
+    margin-top: 9px;
     height: 40px;
 }
 
@@ -849,7 +849,7 @@ input[type=submit] {
     position: relative;
     display: inline-block;
     float: left;
-    margin-top: 44px;
+    margin-top: 37px;
 }
 
 
