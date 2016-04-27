@@ -371,7 +371,7 @@ label {
     width: 200px;
 }
 
-#widget_text {
+.widget_text {
     text-align: center;
     margin-top: 15px;
 }
