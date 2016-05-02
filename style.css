@@ -374,11 +374,6 @@ label {
 
 /*Visa länder*/
 
-.cloud{
-    background-image: url(img/cloud.jpg);
-    background-size: cover;
-}
-
 #container_country {
     border-radius: 15px;
 	margin: 30px auto 0px auto;
@@ -582,9 +577,12 @@ label {
 
 /*Visa städer*/
 
-#kairo_body {
-	background-image: url(img/egypten/kairo/kairo_background.jpg);
+.background_image {
 	background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -22;
+    position: absolute;
 }
 
 .show_city {
