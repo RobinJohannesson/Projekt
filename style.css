@@ -636,6 +636,8 @@ label {
 
 .activity_img {
 	border-radius: 15px;
+    height: 118px;
+    width: 210px;
 }
 
 .bottom_pictures {
