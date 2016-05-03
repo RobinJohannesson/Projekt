@@ -7,6 +7,8 @@ $dbname = "newhorizons";
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 $conn->set_charset("utf8");
 
+$query = "";
+
 /*$query = "SELECT * FROM vacation";
 $result = mysqli_query($conn, $query);
 $num_rows = mysqli_num_rows($result);
@@ -31,6 +33,7 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
 </head>
 
 <body>
+<img src="img/Alexandria.jpg" class="background_image" alt="passande bakgrund för sidan">
     <header>
         <h1><a href="index.html">Horizon</a></h1>
         <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
@@ -58,6 +61,69 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
         </div>
     </header>
     <div id="wrapper">
+        <?php
+
+            if(isset($_GET['id'])) {
+                $query = "SELECT * FROM countries WHERE id = " . $_GET['id'];
+            }
+            $result = mysqli_query($conn, $query);
+
+            if($result) {
+                while($row = mysqli_fetch_assoc($result)) {
+
+                    $query = "SELECT * FROM countries WHERE land = '" . $row['land'] . "'";
+                    $result = mysqli_query($conn, $query);
+                    $fetchAll = mysqli_fetch_all($result,MYSQLI_ASSOC);
+
+
+                    echo ' <h2>'
+                        . $row['land'] .
+                    '</h2>
+                <div class="box" id="fact">
+                    <p>' . $row['countryInfo'] . '</p>
+                </div>
+                <div id="widget_box">
+                    <div id="widget_head">
+                        <h2>3 Städer</h2>
+                    </div>
+                    <div class="widget_content" id="widget_content_first">
+                        <a href="show_city.php?stad='. $row['stad'].  '">
+                <img alt="'  . (isset($fetchAll[0] ) ? $fetchAll[0]['stad']  : "img").  '" class="widget" src="img/' . (isset($fetchAll[0] ) ? $fetchAll[0]['img1']  : "").  '">
+
+                            <div id="widget_text">
+                                <h2>' .(isset($fetchAll[0] ) ? $fetchAll[0]['stad']  : "") . '</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="widget_content" id="widget_content_second">
+                        <a href="show_city.php?stad='. $row['stad'].  '">
+                    <img alt="'  . (isset($fetchAll[1] ) ? $fetchAll[1]['stad']  : "img").  '" class="widget" src="img/'.(isset($fetchAll[1] ) ? $fetchAll[1]['img1']  : "").  '">
+
+                            <div id="widget_text">
+                                <h2>' . (isset($fetchAll[1] ) ? $fetchAll[1]['stad']  : "") . '</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="widget_content" id="widget_content_third">
+                        <a href="show_city.php?stad='. $row['stad'].  '">
+                    <img alt="'  . (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : 'img').  '" class="widget" src="img/'.(isset($fetchAll[2] ) ? $fetchAll[2]['img1']  : "").  '">
+
+                            <div id="widget_text">
+                                <h2>'. (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : "") . '</h2>
+                            </div>
+                        </a>
+                    </div>
+                    
+
+                </div>
+                <footer>
+                </footer> ';
+                }
+
+            }
+
+        ?>
+        <!--
         <h2>
                 Egypten
             </h2>
@@ -97,8 +163,19 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
             </div>
         </div>
         <footer>
-        </footer>
+        </footer> -->
     </div>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+

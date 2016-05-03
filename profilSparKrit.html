@@ -3,25 +3,18 @@
     <head>
         <meta charset="utf-8">
         <link type="text/css" rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
         <link rel="icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
         <title>Horizon Sparade Kriterier</title>
     </head>
     <body>
 
-        
-            <header>
-            <h1><a href="index.html">Horizon</a></h1>
+        <div id="profilWrapper">
+            <header class="headerProf">
+                <h1><a href="index.html">Horizon</a></h1>
                 <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
-                <div class="container">
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">&gt;&gt;Start</a></li>
-                        <li><a href="profilSparRes.html">&gt;&gt;Sparade resor</a></li>
-                        <li class="active">&gt;&gt;Sparade kriterier</li>
-                    </ol>
-                </div>
-            <div class="dropdown">
+                <div class="dropdown">
             <div class="dropbtn">
                 <img src="img/arrow_dropdown.png" class="arrow_for_dropdown">
                 <div class="dropdown_name">
@@ -35,33 +28,21 @@
                 <a href="#">Logga ut</a>
             </div>
         </div>
-        </header>
-        <div id="wrapper_nr4">
-            <div class="page_descr">
-                <h2>Sparade Kriterier</h2>
-            </div>
+            </header>
+            <div id="profKritSect_Surround">
+                <section id="profKritSect">
                     <nav id="profilNav2">
-                        <h2>Listor:</h2>
-                        <ul class="profilNavUl">
+                        <h2>Sparade kriterie-listor:</h2>
+                        <ul id="profilNavUl">
                             <li class="profilNavLi_3">Äventyr i värme</li>
                             <li class="profilNavLi_3">Värme</li>
                             <li class="profilNavLi_3">Barnresor</li>
                             <li class="profilNavLi_3">Shoppingresa</li>
                         </ul>
-                        <hr>
-                        <ul class="profilNavUl">
-                            <li class="profilNavLi_3"><a class="a_black" href="index.html">Start</a></li>
-                            <li class="profilNavLi_3"><a class="a_black" href="profilSparRes.html">Sparade Resor</a></li>
-                            <li class="profilNavLi_3"><a class="a_black" href="profiI_inst.html">Inställningar</a></li>
-                        </ul>
-                        <!--</nav>
-                    <nav id="profilNav25">
-                        -->
                     </nav>
-            <div class="mainContent_2">
-                <div id="savedKritSubHeader">
-                    <h3>Äventyr i värme</h3>
-                </div>
+                    <div id="savedKritSubHeader">
+                        <h3>Äventyr i värme</h3>
+                    </div>
                     <div id="savedKritList">
 
                         <form class="checkboxes">
@@ -83,7 +64,19 @@
                                     <input type="checkbox" name="sun" id="sun" class="checkbox">
                                     <label for="sun">Sol och värme (ca 20 grader eller mer)</label>
                                 </p>
-                            
+                            <legend>Boende</legend>
+                                <p>
+                                    <input type="checkbox" name="hostel" id="hostel" class="checkbox">
+                                    <label for="hostel">Vandrarhem</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="camping" id="camping" class="checkbox">
+                                    <label for="camping">Camping</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="b_and_b" id="b_and_b" class="checkbox">
+                                    <label for="b_and_b">Bed & breakfast</label>
+                                </p>
                                 <legend>Transportmedel</legend>
                                 <p>
                                     <input type="checkbox" name="airplane" id="airplane" class="checkbox">
@@ -132,9 +125,10 @@
                     </form>
                     
                 </div>
-            </div>
+            </section>
             <footer>
             </footer>
+        </div>
         </div>
      </body>
 </html>

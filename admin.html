@@ -1,274 +1,279 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
-        <link rel="icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
-        <title>Horizon Start</title>
-    </head>
-    <body>
-        <header>
-            <h1><a href="index.html">Horizon</a></h1>
-            <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
-            <div class="container">                 
-                <ol class="breadcrumb">
-                    <li><a href="index.html">&gt;&gt;Start</a></li>
-                    <li class="active">&gt;&gt;Administratör</li>
-                </ol>
-            </div>
-            <div class="dropdown">
-            <div class="dropbtn">
-                <img src="img/arrow_dropdown.png" alt="Meny-pil" class="arrow_for_dropdown">
-						<div class="dropdown_name">
-							<p>Wade</p>
-							<p>Wilson</p>
-						</div>
-                    <img src="img/deadpool_avatar.png" alt="Profilbild" class="avatar_img">
-            </div>
-            <div class="dropdown_content">
-                <a href="#">Inställningar</a>
-                <a href="#">Logga ut</a>
-            </div>
-        </div>
-        </header>
-        <div id="wrapper_nr2">
-            <form action="action.php" method="post" id="admin_box">
-                <input type="file" name="pic" accept="image/*">
-                <input type="file" name="pic" accept="image/*">
-                <input type="text" id="activity_1" name="activity_1" placeholder="Länk till första aktiviteten">
-                <input type="file" name="pic" accept="image/*">
-                <input type="text" id="activity_2" name="activity_2" placeholder="Länk till andra aktiviteten">
-                <input type="file" name="pic" accept="image/*">
-                <input type="text" id="activity_3" name="activity_3" placeholder="Länk till tredje aktiviteten">
-                <input type="file" name="pic" accept="image/*">
-                <input type="text" id="activity_4" name="activity_4" placeholder="Länk till fjärde aktiviteten">
-                <input type="text" id="activities" name="activities" placeholder="Länk till aktiviteter">
-                <input type="text" id="travel" name="travel" placeholder="Länk till transporten">
-                <input type="text" id="lodging" name="lodging" placeholder="Länk till boende">
-                <label for="edit_country">Land</label>
-                <input type="text" id="edit_country" name="country" placeholder="Land:">
-                <textarea rows="4" cols="50" id="edit_country_desc" name="country_desc" form="admin_box" placeholder="Beskrivning av land:"></textarea>
-                <input type="submit" value="spara ändringar" name="btn">
-                <input type="submit" value="ta bort" name="btn">
-                <label for="edit_city">Stad</label>
-                <input type="text" id="edit_city" name="city" placeholder="Stad">
-                <textarea rows="4" cols="50" id="edit_city_desc" name="city_desc" form="admin_box" placeholder="Beskrivning av stad:"></textarea>
-                <label for="edit_criteria">Kriterie</label>
-                <input type="text" id="edit_criteria" name="criteria" placeholder="Kriterie">
-            
-                <!--VÄLJ LAND-->
-						<h4 id="form_headings">Kontinent</h4>
-						<p>
-							<select>
-								<option name="no_continent_preference">Ingen preferens</option>
-								<option name="europe">Europa</option>
-								<option name="south_america">Sydamerika</option>
-								<option name="north_america">Nordamerika</option>
-								<option name="asia">Asien</option>
-								<option name="australia">Australien (Oceanien)</option>
-								<option name="africa">Afrika</option>
-								<option name="antarctica">Antarktis</option>
-							</select>
-						</p>
-						<h4 id="form_headings">Land</h4>
-						<p>
-							<select>
-								<option name="no_country_preference">Ingen preferens</option>
-								<option name="spain">Spanien</option>
-								<option name="japan">Japan</option>
-								<option name="greece">Grekland</option>
-								<option name="usa">USA</option>
-								<option name="norway">Norge</option>
-								<option name="egypt">Egypten</option>
-								<option name="china">Kina</option>
-							</select>
-							<!--Viktigt att lägga in de länder som finns i scenario-->
-						</p>
-						<hr>
-                    <!--ÄVENTYR-->
-						<h2 id="adventure">Äventyr</h2>
-						<p>
-							Kryssa i det du skulle kunna vara intresserad av.
-						</p>
-						<p>
-							<input type="checkbox" name="bergsklattring" id="bergsklattring" class="checkbox">
-							<label for="bergsklattring">Bergsklättring</label>
-						</p>
-						<p>
-							<input type="checkbox" name="vandring" id="vandring" class="checkbox">
-							<label for="vandring">Vandring</label>
-						</p>
-						<p>
-							<input type="checkbox" name="kanot" id="kanot" class="checkbox">
-							<label for="kanot">Kanot</label>
-						</p>
-						<p>
-							<input type="checkbox" name="backpacking" id="backpacking" class="checkbox">
-							<label for="backpacking">Backpacking</label>
-						</p>
-						<p>
-							<input type="checkbox" name="safari" id="safari" class="checkbox">
-							<label for="safari">Safari</label>
-						</p>
-						<p>
-							<input type="checkbox" name="skidor" id="skidor" class="checkbox">
-							<label for="skidor">Skidor</label>
-						</p>
-						<p>
-							<input type="checkbox" name="surfing" id="surfing" class="checkbox">
-							<label for="surfing">Surfing</label>
-						</p>
-						<p>
-							<input type="checkbox" name="dykning" id="dykning" class="checkbox">
-							<label for="dykning">Dykning</label>
-						</p>
-						<hr>
-					<!--AVSLAPPNING-->
-						<h2 id="relaxation">Avslappning</h2>
-						<p>
-							Kryssa i det du skulle kunna vara intresserad av.
-						</p>
-						<p>
-							<input type="checkbox" name="spa" id="spa" class="checkbox">
-							<label for="spa">Spa</label>
-						</p>
-						<p>
-							<input type="checkbox" name="nature" id="nature" class="checkbox">
-							<label for="nature">Naturupplevelser</label>
-						</p>
-						<p>
-							<input type="checkbox" name="sun_vacation" id="sun_vacation" class="checkbox">
-							<label for="sun_vacation">Solsemester</label>
-						</p>
-						<p>
-							<input type="checkbox" name="yoga" id="yoga" class="checkbox">
-							<label for="yoga">Yoga</label>
-						</p>
-						<p>
-							<input type="checkbox" name="meditation" id="meditation" class="checkbox">
-							<label for="meditation">Meditation</label>
-						</p>
-						<hr>
-					<!--KULTUR-->
-						<h2 id="culture">Kultur</h2>
-						<p>
-							Kryssa i det du skulle kunna vara intresserad av.
-						</p>
-						<p>
-							<input type="checkbox" name="sightseeing" id="sightseeing" class="checkbox">
-							<label for="sightseeing">Sightseeing</label>
-						</p>
-						<p>
-							<input type="checkbox" name="town" id="town" class="checkbox">
-							<label for="town">Storstad</label>
-						</p>
-						<p>
-							<input type="checkbox" name="history" id="history" class="checkbox">
-							<label for="history">Historia</label>
-						</p>
-						<p>
-							<input type="checkbox" name="religion" id="religion" class="checkbox">
-							<label for="religion">Religion</label>
-						</p>
-						<p>
-							<input type="checkbox" name="education" id="education" class="checkbox">
-							<label for="education">Utbildningssyfte</label>
-						</p>
-						<p>
-							<input type="checkbox" name="food_trip" id="food_trip" class="checkbox">
-							<label for="food_trip">Matresa</label>
-						</p>
-						<hr>
-					<!--KLIMAT-->
-						<h2 id="climate">Klimat</h2>
-						<p>
-							Kryssa i de väder du kan tänka dig.
-						</p>
-						<p>
-							<input type="checkbox" name="sun" id="sun" class="checkbox">
-							<label for="sun">Sol och värme (ca 20 grader eller mer)</label>
-						</p>
-						<p>
-							<input type="checkbox" name="cool_weather" id="cool_weather" class="checkbox">
-							<label for="cool_weather">Sval temperatur (ca 10-20 grader)</label>
-						</p>
-						<p>
-							<input type="checkbox" name="snow" id="snow" class="checkbox">
-							<label for="snow">Snö och kallt (kring fryspunkten eller kallare)</label>
-						</p>
-						<p>
-							Kryssa i om du vill ha någon särskild terräng.
-						</p>
-						<p>
-							<input type="checkbox" name="mountain" id="mountain" class="checkbox">
-							<label for="mountain">Bergigt</label>
-						</p>
-						<p>
-							<input type="checkbox" name="flat" id="flat" class="checkbox">
-							<label for="flat">Plant</label>
-						</p>
-						<p>
-							<input type="checkbox" name="desert" id="desert" class="checkbox">
-							<label for="desert">Öken</label>
-						</p>
-						<p>
-							<input type="checkbox" name="forest" id="forest" class="checkbox">
-							<label for="forest">Skog</label>
-						</p>
-						<p>
-							<input type="checkbox" name="water" id="water" class="checkbox">
-							<label for="water">Närhet till vatten</label>
-						</p>
-						<hr>
-					<!--DISTANS-->
-						<h2 id="distance">Distans</h2>
-						<p>
-							Välj hur långt bort resmålet som längst får lov att ligga.
-						</p>
-						<p>
-							<select>
-								<option name="distance_1">1 m</option>
-								<option name="distance_2">2 m</option>
-								<option name="distance_3">3 m</option>
-							</select>
-						</p>
-						<p>
-							Karta.
-						</p>
-						<hr>
-					<!--TRANSPORTMEDEL-->
-						<h2 id="transport">Transportmedel</h2>
-						<p>
-							Välj vilka typer av transportmedel du kan tänka dig.
-						</p>
-						<p>
-							<input type="checkbox" name="airplane" id="airplane" class="checkbox">
-							<label for="airplane">Flygplan</label>
-						</p>
-						<p>
-							<input type="checkbox" name="train" id="train" class="checkbox">
-							<label for="train">Tåg</label>
-						</p>
-						<p>
-							<input type="checkbox" name="bus" id="bus" class="checkbox">
-							<label for="bus">Buss</label>
-						</p>
-						<p>
-							<input type="checkbox" name="other_transport" id="other_transport" class="checkbox">
-							<label for="other_transport">Annat/eget transportmedel</label>
-						</p>
-						<hr>
-						<input type="submit" value="spara ändringar" name="btn">
-                        <input type="submit" value="ta bort" name="btn">
-					</form>
-            
-            
-            
-            
-            <footer>
-            </footer>
-        </div>
-    </body>
+<head>
+	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
+	<link rel="icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
+	<title>Horizon Start</title>
+</head>
+<body>
+<header>
+	<h1><a href="index.html">Horizon</a></h1>
+	<h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><a href="index.html">&gt;&gt;Start</a></li>
+			<li class="active">&gt;&gt;Administratör</li>
+		</ol>
+	</div>
+	<div class="dropdown">
+		<div class="dropbtn">
+			<img src="img/arrow_dropdown.png" alt="Meny-pil" class="arrow_for_dropdown">
+			<div class="dropdown_name">
+				<p>Wade</p>
+				<p>Wilson</p>
+			</div>
+			<img src="img/deadpool_avatar.png" alt="Profilbild" class="avatar_img">
+		</div>
+		<div class="dropdown_content">
+			<a href="#">Inställningar</a>
+			<a href="#">Logga ut</a>
+		</div>
+	</div>
+</header>
+<div id="wrapper_nr2">
+	<form action="create.php" method="post" id="admin_box" enctype="multipart/form-data">
+		<input type="file" name="pic1" accept="image/*">
+		<input type="file" name="pic2" accept="image/*">
+		<input type="text" id="activity_1" name="activity_1" placeholder="Länk till första aktiviteten">
+		<input type="file" name="pic3" accept="image/*">
+		<input type="text" id="activity_2" name="activity_2" placeholder="Länk till andra aktiviteten">
+		<input type="file" name="pic4" accept="image/*">
+		<input type="text" id="activity_3" name="activity_3" placeholder="Länk till tredje aktiviteten">
+		<input type="file" name="pic5" accept="image/*">
+		<input type="text" id="activity_4" name="activity_4" placeholder="Länk till fjärde aktiviteten">
+		<input type="text" id="activities" name="activities" placeholder="Länk till aktiviteter">
+		<input type="text" id="travel" name="travel" placeholder="Länk till transporten">
+		<input type="text" id="lodging" name="lodging" placeholder="Länk till boende">
+		<input type="file" name="pic6" accept="image/*">
+		<input type="text" name="imgText1" placeholder="Text för bild ovan vänster">
+		<input type="text" name="imgText2" placeholder="Text för bild ovan höger">
+		<input type="text" name="imgText3" placeholder="Text för bild ovan vänster">
+		<input type="text" name="imgText4" placeholder="Text för bild ovan höger">
+		<label for="edit_country">Land</label>
+		<input type="text" id="edit_country" name="country" placeholder="Land:">
+		<textarea rows="4" cols="50" id="edit_country_desc" name="country_desc" form="admin_box" placeholder="Beskrivning av land:"></textarea>
+		<input type="submit" value="spara ändringar" name="btn">
+		<input type="submit" value="ta bort" name="btn">
+		<label for="edit_city">Stad</label>
+		<input type="text" id="edit_city" name="city" placeholder="Stad">
+		<textarea rows="4" cols="50" id="edit_city_desc" name="city_desc" form="admin_box" placeholder="Beskrivning av stad:"></textarea>
+		<label for="edit_criteria">Kriterie</label>
+		<input type="text" id="edit_criteria" name="criteria" placeholder="Kriterie">
+
+		<!--VÄLJ LAND-->
+		<h4 id="form_headings">Kontinent</h4>
+		<p>
+			<select>
+				<option name="no_continent_preference">Ingen preferens</option>
+				<option name="europe">Europa</option>
+				<option name="south_america">Sydamerika</option>
+				<option name="north_america">Nordamerika</option>
+				<option name="asia">Asien</option>
+				<option name="australia">Australien (Oceanien)</option>
+				<option name="africa">Afrika</option>
+				<option name="antarctica">Antarktis</option>
+			</select>
+		</p>
+		<h4 id="form_headings">Land</h4>
+		<p>
+			<select>
+				<option name="no_country_preference">Ingen preferens</option>
+				<option name="spain">Spanien</option>
+				<option name="japan">Japan</option>
+				<option name="greece">Grekland</option>
+				<option name="usa">USA</option>
+				<option name="norway">Norge</option>
+				<option name="egypt">Egypten</option>
+				<option name="china">Kina</option>
+			</select>
+			<!--Viktigt att lägga in de länder som finns i scenario-->
+		</p>
+		<hr>
+		<!--ÄVENTYR-->
+		<h2 id="adventure">Äventyr</h2>
+		<p>
+			Kryssa i det du skulle kunna vara intresserad av.
+		</p>
+		<p>
+			<input type="checkbox" name="bergsklattring" id="bergsklattring" class="checkbox">
+			<label for="bergsklattring">Bergsklättring</label>
+		</p>
+		<p>
+			<input type="checkbox" name="vandring" id="vandring" class="checkbox">
+			<label for="vandring">Vandring</label>
+		</p>
+		<p>
+			<input type="checkbox" name="kanot" id="kanot" class="checkbox">
+			<label for="kanot">Kanot</label>
+		</p>
+		<p>
+			<input type="checkbox" name="backpacking" id="backpacking" class="checkbox">
+			<label for="backpacking">Backpacking</label>
+		</p>
+		<p>
+			<input type="checkbox" name="safari" id="safari" class="checkbox">
+			<label for="safari">Safari</label>
+		</p>
+		<p>
+			<input type="checkbox" name="skidor" id="skidor" class="checkbox">
+			<label for="skidor">Skidor</label>
+		</p>
+		<p>
+			<input type="checkbox" name="surfing" id="surfing" class="checkbox">
+			<label for="surfing">Surfing</label>
+		</p>
+		<p>
+			<input type="checkbox" name="dykning" id="dykning" class="checkbox">
+			<label for="dykning">Dykning</label>
+		</p>
+		<hr>
+		<!--AVSLAPPNING-->
+		<h2 id="relaxation">Avslappning</h2>
+		<p>
+			Kryssa i det du skulle kunna vara intresserad av.
+		</p>
+		<p>
+			<input type="checkbox" name="spa" id="spa" class="checkbox">
+			<label for="spa">Spa</label>
+		</p>
+		<p>
+			<input type="checkbox" name="nature" id="nature" class="checkbox">
+			<label for="nature">Naturupplevelser</label>
+		</p>
+		<p>
+			<input type="checkbox" name="sun_vacation" id="sun_vacation" class="checkbox">
+			<label for="sun_vacation">Solsemester</label>
+		</p>
+		<p>
+			<input type="checkbox" name="yoga" id="yoga" class="checkbox">
+			<label for="yoga">Yoga</label>
+		</p>
+		<p>
+			<input type="checkbox" name="meditation" id="meditation" class="checkbox">
+			<label for="meditation">Meditation</label>
+		</p>
+		<hr>
+		<!--KULTUR-->
+		<h2 id="culture">Kultur</h2>
+		<p>
+			Kryssa i det du skulle kunna vara intresserad av.
+		</p>
+		<p>
+			<input type="checkbox" name="sightseeing" id="sightseeing" class="checkbox">
+			<label for="sightseeing">Sightseeing</label>
+		</p>
+		<p>
+			<input type="checkbox" name="town" id="town" class="checkbox">
+			<label for="town">Storstad</label>
+		</p>
+		<p>
+			<input type="checkbox" name="history" id="history" class="checkbox">
+			<label for="history">Historia</label>
+		</p>
+		<p>
+			<input type="checkbox" name="religion" id="religion" class="checkbox">
+			<label for="religion">Religion</label>
+		</p>
+		<p>
+			<input type="checkbox" name="education" id="education" class="checkbox">
+			<label for="education">Utbildningssyfte</label>
+		</p>
+		<p>
+			<input type="checkbox" name="food_trip" id="food_trip" class="checkbox">
+			<label for="food_trip">Matresa</label>
+		</p>
+		<hr>
+		<!--KLIMAT-->
+		<h2 id="climate">Klimat</h2>
+		<p>
+			Kryssa i de väder du kan tänka dig.
+		</p>
+		<p>
+			<input type="checkbox" name="sun" id="sun" class="checkbox">
+			<label for="sun">Sol och värme (ca 20 grader eller mer)</label>
+		</p>
+		<p>
+			<input type="checkbox" name="cool_weather" id="cool_weather" class="checkbox">
+			<label for="cool_weather">Sval temperatur (ca 10-20 grader)</label>
+		</p>
+		<p>
+			<input type="checkbox" name="snow" id="snow" class="checkbox">
+			<label for="snow">Snö och kallt (kring fryspunkten eller kallare)</label>
+		</p>
+		<p>
+			Kryssa i om du vill ha någon särskild terräng.
+		</p>
+		<p>
+			<input type="checkbox" name="mountain" id="mountain" class="checkbox">
+			<label for="mountain">Bergigt</label>
+		</p>
+		<p>
+			<input type="checkbox" name="flat" id="flat" class="checkbox">
+			<label for="flat">Plant</label>
+		</p>
+		<p>
+			<input type="checkbox" name="desert" id="desert" class="checkbox">
+			<label for="desert">Öken</label>
+		</p>
+		<p>
+			<input type="checkbox" name="forest" id="forest" class="checkbox">
+			<label for="forest">Skog</label>
+		</p>
+		<p>
+			<input type="checkbox" name="water" id="water" class="checkbox">
+			<label for="water">Närhet till vatten</label>
+		</p>
+		<hr>
+		<!--DISTANS-->
+		<h2 id="distance">Distans</h2>
+		<p>
+			Välj hur långt bort resmålet som längst får lov att ligga.
+		</p>
+		<p>
+			<select>
+				<option name="distance_1">1 m</option>
+				<option name="distance_2">2 m</option>
+				<option name="distance_3">3 m</option>
+			</select>
+		</p>
+		<p>
+			Karta.
+		</p>
+		<hr>
+		<!--TRANSPORTMEDEL-->
+		<h2 id="transport">Transportmedel</h2>
+		<p>
+			Välj vilka typer av transportmedel du kan tänka dig.
+		</p>
+		<p>
+			<input type="checkbox" name="airplane" id="airplane" class="checkbox">
+			<label for="airplane">Flygplan</label>
+		</p>
+		<p>
+			<input type="checkbox" name="train" id="train" class="checkbox">
+			<label for="train">Tåg</label>
+		</p>
+		<p>
+			<input type="checkbox" name="bus" id="bus" class="checkbox">
+			<label for="bus">Buss</label>
+		</p>
+		<p>
+			<input type="checkbox" name="other_transport" id="other_transport" class="checkbox">
+			<label for="other_transport">Annat/eget transportmedel</label>
+		</p>
+		<hr>
+		<input type="submit" value="spara ändringar" name="btn">
+		<input type="submit" value="ta bort" name="btn">
+	</form>
+
+
+
+
+	<footer>
+	</footer>
+</div>
+</body>
 </html>

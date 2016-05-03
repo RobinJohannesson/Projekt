@@ -85,7 +85,7 @@ while ($row = mysqli_fetch_assoc($result1)) {
                while ($row = mysqli_fetch_assoc($result1)) {
 
                    echo '<a href="show_travel.html?id='. $row['id'] .'">
-                   <img class="country_widget" id="first_country_widget" src="' . $row['img1'] . '">
+                   <img class="country_widget" id="first_country_widget" src="img/' . $row['img1'] . '">
 
                    <div class="country_text">
                         <h2>' . $row['land'] . '</h2>
@@ -101,7 +101,7 @@ while ($row = mysqli_fetch_assoc($result1)) {
                while ($row = mysqli_fetch_assoc($result1)) {
 
                    echo '<a href="show_travel.html?id='. $row['id'] .'">
-                   <img class="country_widget" id="first_country_widget" src="' . $row['img1'] . '">
+                   <img class="country_widget" id="first_country_widget" src="img/' . $row['img1'] . '">
 
                    <div class="country_text">
                         <h2>' . $row['land'] . '</h2>
@@ -117,7 +117,7 @@ while ($row = mysqli_fetch_assoc($result1)) {
                while ($row = mysqli_fetch_assoc($result1)) {
 
                    echo '<a href="show_travel.html?id='. $row['id'] .'">
-                   <img class="country_widget" id="first_country_widget" src="' . $row['img1'] . '">
+                   <img class="country_widget" id="first_country_widget" src="img/' . $row['img1'] . '">
 
                    <div class="country_text">
                         <h2>' . $row['land'] . '</h2>
