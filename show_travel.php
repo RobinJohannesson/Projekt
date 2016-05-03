@@ -33,7 +33,6 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
 </head>
 
 <body>
-<img src="img/Alexandria.jpg" class="background_image" alt="passande bakgrund för sidan">
     <header>
         <h1><a href="index.html">Horizon</a></h1>
         <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
