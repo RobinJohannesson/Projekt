@@ -1,0 +1,129 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 03, 2016 at 04:44 PM
+-- Server version: 10.1.10-MariaDB
+-- PHP Version: 7.0.4
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `newhorizons`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `countries`
+--
+
+CREATE TABLE `countries` (
+  `id` int(4) NOT NULL,
+  `stad` varchar(255) NOT NULL,
+  `land` varchar(255) NOT NULL,
+  `vandring` tinyint(1) NOT NULL,
+  `kanot` tinyint(1) NOT NULL,
+  `backpacking` tinyint(1) NOT NULL,
+  `safari` tinyint(1) NOT NULL,
+  `skidor` tinyint(1) NOT NULL,
+  `surfing` tinyint(1) NOT NULL,
+  `dykning` tinyint(1) NOT NULL,
+  `bergsklattring` tinyint(1) NOT NULL,
+  `spa` tinyint(1) NOT NULL,
+  `naturupplevelser` tinyint(1) NOT NULL,
+  `solsemester` tinyint(1) NOT NULL,
+  `yoga` tinyint(1) NOT NULL,
+  `meditation` tinyint(1) NOT NULL,
+  `hotell` tinyint(1) NOT NULL,
+  `motell` tinyint(1) NOT NULL,
+  `vandrarhem` tinyint(1) NOT NULL,
+  `camping` tinyint(1) NOT NULL,
+  `bedAndBreakfast` tinyint(1) NOT NULL,
+  `kostnadTransport` float NOT NULL,
+  `kostnadBoende` float NOT NULL,
+  `levnadsKostnad` float NOT NULL,
+  `distans` int(5) NOT NULL,
+  `solTemp` tinyint(1) NOT NULL,
+  `svalTemp` tinyint(1) NOT NULL,
+  `kalltTemp` tinyint(1) NOT NULL,
+  `bergigt` tinyint(1) NOT NULL,
+  `plant` tinyint(1) NOT NULL,
+  `oken` tinyint(1) NOT NULL,
+  `skog` tinyint(1) NOT NULL,
+  `narhetTillVatten` tinyint(1) NOT NULL,
+  `sightseeing` tinyint(1) NOT NULL,
+  `storstad` tinyint(1) NOT NULL,
+  `historia` tinyint(1) NOT NULL,
+  `religion` tinyint(1) NOT NULL,
+  `utbildningssyfte` tinyint(1) NOT NULL,
+  `matresa` tinyint(1) NOT NULL,
+  `kontinent` varchar(240) NOT NULL,
+  `flygplan` tinyint(1) NOT NULL,
+  `tag` tinyint(1) NOT NULL,
+  `buss` tinyint(1) NOT NULL,
+  `annat` tinyint(1) NOT NULL,
+  `img1` varchar(250) NOT NULL,
+  `img2` varchar(250) NOT NULL,
+  `img3` varchar(250) NOT NULL,
+  `img4` varchar(250) NOT NULL,
+  `img5` varchar(250) NOT NULL,
+  `countryInfo` longtext NOT NULL,
+  `cityInfo` longtext NOT NULL,
+  `background` varchar(250) NOT NULL,
+  `imgLink1` longtext NOT NULL,
+  `imgLink2` longtext NOT NULL,
+  `imgLink3` longtext NOT NULL,
+  `imgLink4` longtext NOT NULL,
+  `imgText1` varchar(250) NOT NULL,
+  `imgText2` varchar(250) NOT NULL,
+  `imgText3` varchar(250) NOT NULL,
+  `imgText4` varchar(250) NOT NULL,
+  `hotellText` varchar(250) NOT NULL,
+  `flygText` varchar(250) NOT NULL,
+  `aktivitetText` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `countries`
+--
+
+INSERT INTO `countries` (`id`, `stad`, `land`, `vandring`, `kanot`, `backpacking`, `safari`, `skidor`, `surfing`, `dykning`, `bergsklattring`, `spa`, `naturupplevelser`, `solsemester`, `yoga`, `meditation`, `hotell`, `motell`, `vandrarhem`, `camping`, `bedAndBreakfast`, `kostnadTransport`, `kostnadBoende`, `levnadsKostnad`, `distans`, `solTemp`, `svalTemp`, `kalltTemp`, `bergigt`, `plant`, `oken`, `skog`, `narhetTillVatten`, `sightseeing`, `storstad`, `historia`, `religion`, `utbildningssyfte`, `matresa`, `kontinent`, `flygplan`, `tag`, `buss`, `annat`, `img1`, `img2`, `img3`, `img4`, `img5`, `countryInfo`, `cityInfo`, `background`, `imgLink1`, `imgLink2`, `imgLink3`, `imgLink4`, `imgText1`, `imgText2`, `imgText3`, `imgText4`, `hotellText`, `flygText`, `aktivitetText`) VALUES
+(15, 'Geneve', 'Schweiz', 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, '', 1, 1, 1, 1, 'schweiz_country.jpg', 'train.jpg', 'dagsutflykt.jpg', 'boat.jpg', 'tasting.jpg', 'Fint land', '', 'Switzerland.jpg', 'https://www.viatorcom.se/sv/7384/tours/Geneve/Dagsresa­till­Gruyeres­inklusive- Golden­Panoramic­Express­Train/d578­2510KT002', 'https://www.viatorcom.se/sv/7384/tours/Geneve/Chamonix­och­Mont­Blanc/d578­2510KT001', 'https://www.viatorcom.se/sv/7384/tours/Geneve/Geneva­City­Tour­and­Boat­Cruise/d5782510KTG207', 'https://www.viatorcom.se/sv/7384/tours/Geneve/Day­Trip­to­Gruyeres­with­Cheese­and- Chocolate­Tastings/d578­2510KTG352', 'Tågresa till Gruyères', 'Utflykt till Chamonix och Mont Blanc', 'Utflykt till Chamonix och Mont Blanc', 'Ost­ och chokladprovning', 'http://www.reseguiden.se/hotell/geneve/2660646', 'https://www.flygresor.se/schweiz/geneve', 'https://www.viatorcom.se/sv/7384/Geneve/d578­ttd'),
+(17, 'Buenos Aires', 'Argentina', 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, '', 1, 0, 0, 0, 'BA-city.jpg', 'BA-coocking.jpg', 'BA-tango.jpg', 'BA-arkitektur.jpg', 'BA-pub.jpg', 'Argentina, det officiella språket är spanska, det talas också italienska och några indianspråk, till exempel guaraní talas också. Klimatet växlar från subtropiskt i norr till nästan arktiskt i söder. Större delen av landet har dock ett tempererat klimat. På Pampas är det milt, vintertid går temperaturen sällan under noll och sommartid ligger medeltemperaturen över 20 grader. Vid kusten är luftfuktigheten hög, men inåt landet är klimatet torrare och temperaturväxlingarna tydligare. Valutan är argentinsk peso.\r\nFör vistelser under tre månader krävs inte något turistvisum för resenärer från de flesta länder. Resenärer uppmanas dock att kontakta sin lokala ambassad innan avresa. ', '', 'Argentina-background.jpg', 'http://www.viator.com/tours/Buenos-Aires/Buenos-Aires-Cooking-Class/d901-5674P125', 'http://www.viator.com/tours/Buenos-Aires/Buenos-Aires-Dinner-and-Tango-Show/d901-5674TANGO', 'http://www.viator.com/tours/Buenos-Aires/Architectour/d901-26466P4', 'http://www.viator.com/tours/Buenos-Aires/Buenos-Aires-Pub-Crawl/d901-5674PUB', 'Matlagningskurs', 'Middag och tango show', 'Middag och tango show', 'Guidad pub-crawl', '', '', ''),
+(18, 'Cordoba', 'Argentina', 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, '', 1, 0, 0, 0, 'cordoba-city.jpg', 'Cordoba-mountain.jpg', 'Cordoba-punilla.jpg', 'Cordoba-jesuit.jpg', 'Cordoba-traslasierra.jpg', 'Córdoba är Argentinas näst största stad med cirka 1,5 miljoner invånare (2003). Staden är huvudstad i provinsen Córdoba. Córdoba är en stad med mångsidig industri. Där finns textil- och transportindustri. Staden är också ett kommunikations-, handels- och kulturcentrum belägen cirka 700 kilometer nordväst om huvudstaden Buenos Aires. Staden grundades 1573 och var en av jesuiternas huvudorter i det spanska Amerika. Landets äldsta universitet grundades 1613 i Córdoba.', '', 'argentina-background.jpg', 'http://www.viator.com/tours/Cordoba/Sierras-Chicas-circuit-Half-Day-Tour-from-Cordoba/d22281-5674P145', 'http://www.viator.com/tours/Cordoba/Punilla-Valley-Full-Day-Tour-from-Cordoba/d22281-5674P147', 'http://www.viator.com/tours/Cordoba/Full-Day-Jesuit-Legacy-Tour-from-Cordoba/d22281-5674P140', 'http://www.viator.com/tours/Cordoba/Traslasierra-Valley-Full-Day-Tour-from-Cordoba/d22281-5674P148', 'Guidad tur bland bergen', 'Heldagstur i Punilla-dalen', 'Heldagstur i Punilla-dalen', 'Heldags guidad tur i Traslasierra dalen', '', '', ''),
+(19, 'Caracas', 'Venezuela', 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, '', 1, 0, 0, 0, 'caracas-city.jpg', 'caracas-cablecar.jpg', 'caracas-avila.jpg', 'caracas-topotepuy.jpg', 'caracas-history.jpg', 'Venezuela, Venezuelas Bolivar Fuerte är valutan i Venezuela (VE, VEN). Det officiella språket är spanska och utöver det finns 30 olika indianspråk. Större delen av Venezuela ligger i den tropiska zonen men de stora höjdskillnaderna gör att klimatet varierar. Låglandet är varmt, medan bergsområdena är svalare.\r\nInget visum krävs men man behöver fylla i ett gratis turist kort (”tarjeta de ingresso”) också betecknat som ett DEX-2, för att få resa in i landet. Korten utfärdas normalt till inkommande flygpassagerare men hittas vid alla gränskontroller.', 'Caracas är huvudstaden i Venezuela, och huvudort för Venezuelas huvudstadsdistrikt. Staden är belägen i norra delen av landet i en dalgång mellan två bergskedjor, tio kilometer från Karibiska havet. Staden ligger cirka 1 000 meter över havet och har ett behagligt klimat.\r\nCaracas är Venezuela administrativa, ekonomiska och kulturella centrum och har, främst till följd av landets oljeboom, haft en snabb tillväxt efter andra världskriget. Stadsbilden är modern med breda motorvägar och höghus, men stora slumområden breder ut sig på sluttningarna runt stadskärnan. Industrin, bland annat bilfabriker, livsmedels- och kemisk produktion, ligger framförallt i förstäderna. Motorväg förbinder Caracas med hamnstaden La Guaira och den internationella flygplatsen vid kusten. Staden har flera universitet och högskolor, museer och bibliotek.', 'venezuela-bakgrund.jpg', 'http://www.viator.com/tours/Caracas/Caracas-Sightseeing-Tour-Including-Cable-Car-Ride-and-Lunch/d25981-18605P7', 'http://www.viator.com/tours/Caracas/Half-Day-Tour-Avila/d25981-18605P3', 'http://www.viator.com/tours/Caracas/Full-Day-Topotepuy-El-Hatillo-Tour/d25981-18605P4', 'http://www.viator.com/tours/Caracas/Half-Day-Historical-Tour-of-Caracas/d25981-18605P5', 'Guidad Sight-seeing tur och Cable car åk', 'Guidad Jeep tur i El Ávila National Parken', 'Guidad Jeep tur i El Ávila National Parken', 'Guidad tur i Caracas historiska delar', '', '', ''),
+(20, 'Maracaibo', 'Venezuela', 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, '', 1, 0, 0, 0, 'maracaibo-background.jpg', 'maracaibo-climbing.jpg', 'maracaibo-spa.jpg', 'maracaibo-spa.jpg', 'maracaibo-museum.jpg', '', 'Maracaibo är en stad i västra Venezuela, och är den administrativa huvudorten för delstaten Zulia. Den är den näst största staden i landet och är belägen vid Maracaibosjön, som trots sitt namn är en havsvik. Maracaibo grundades 1529.', '', 'http://www.summitpost.org/piedras-blancas/691622', 'http://discoverwhattodo.com/caracas-venezuela/canoe-kayak-river-tours-rentals-caracas-venezuela.htm', 'http://www.spalatinomaracaibo.com/', 'http://www.world-guides.com/latin-america/venezuela/zulia/maracaibo/maracaibo_museums.html', 'Bergsklättring', 'Kanot- och kajakpaddling', 'Kanot- och kajakpaddling', 'Museum', '', '', ''),
+(21, 'Valencia', 'Venezuela', 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, '', 1, 0, 0, 0, 'valencia-city.jpg', 'valencia-dykning.jpg', 'valencia-lake.jpg', 'Valencia-park.jpg', 'valencia-dunas.jpg', '', 'Valencia är en stad i norra Venezuela, och är den administrativa huvudorten för delstaten Carabobo. Den är belägen strax väster om Valenciasjön, landets näst största insjö. Valencia grundades av spanjorerna den 22 mars 1555 under namnet Nuestra Señora de la Asunción de Nueva Valencia del Rey.', '', 'http://www.travellosroques.com/paseos/los_roques/13.html', 'http://earthobservatory.nasa.gov/IOTD/view.php?id=5001', 'https://www.tripadvisor.com.au/Attraction_Review-g316069-d3366835-Reviews-Parque_Fernando_Penalver-Valencia_Central_Region.html', 'http://www.parquedunas.com.ve/#_=_', 'Dykning', 'Största sötvatten sjön i Venezuela, Lago de Valencia', 'Största sötvatten sjön i Venezuela, Lago de Valencia', 'Stort badhus/waterpark', '', '', ''),
+(22, 'Djenne', 'Mali', 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, '', 1, 0, 0, 0, 'djenne-city.jpg', 'djenne-moské.jpg', 'djenne-oldtown.jpg', 'djenne-house.jpg', 'djenne-omnejd.jpg', 'Mali, franska är det officiella språket i landet. Klimatet är hett och torrt i hela Mali. I Saharaöknen i norr regnar det mycket sällan, vissa år faller ingen nederbörd alls. I Sahelområdet längre söderut är klimatet mindre torrt och medeltemperaturen är något lägre. I den sydligaste delen av landet är det svalare och fuktigare. I Mali är valutan CFA-franc.\r\nAlla nationaliteter behöver visum för inresa till Mali. Ett visum är giltigt för en inresa i landet och gäller i en månad från inresedagen i Mali, men kan förlängas på Migrationsverket i Bamako eller på en malisk polisstation. Visum kan erhållas upp till tre månader innan resan och erhålls från närmaste maliska ambassad eller konsulat.', '', 'mali-bakgrund.jpg', 'https://www.khanacademy.org/humanities/art-africa/west-africa/mali1/a/great-mosque-of-djenn', 'http://whc.unesco.org/en/list/116', 'http://www.djennetourism.com/places-of-interest/', 'http://www.djennetourism.com/surroundings/', 'Djennes stora moské', 'Djennes äldre stadsdelar', 'Djennes äldre stadsdelar', 'Djennes omnejder', '', '', '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `countries`
+--
+ALTER TABLE `countries`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `countries`
+--
+ALTER TABLE `countries`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
