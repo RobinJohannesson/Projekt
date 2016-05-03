@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
-    header('Location: index.html');
+    header('Location: index.php');
 } else {
 
 }

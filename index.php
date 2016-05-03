@@ -46,7 +46,7 @@ session_start();
                     if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
                         echo '<li class="indexNavLi_2"><a href="profilSparKrit.php" class="indexNavA">Sparade Resor/Kriterier</a></li>';
                     } else {
-                        echo '<li class="indexNavLi_2"><a href="login.html" class="indexNavA">Logga in</a></li>';
+                        echo '<li class="indexNavLi_2"><a href="login.php" class="indexNavA">Logga in</a></li>';
                     }
                     ?>
                     <li class="indexNavLi_1">&middot;</li>
