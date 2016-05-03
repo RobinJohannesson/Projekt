@@ -21,7 +21,7 @@ $user->logIn();
 
 if($user->logIn()) {
     $_SESSION['user'] = "Logged In";
-    header('Location: index.php');
+    header('Location: profilStart.php');
 } else {
     echo "<p style='color: red;'>Invalid username or password. </p>";
 }

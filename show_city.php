@@ -32,7 +32,7 @@ $query = "";
                     <li><a href="kriterier.html">&gt;&gt;Kriterier</a></li>
                     <li><a href="show_country.html">&gt;&gt;Länder</a></li>
                     <li><a href="show_travel">&gt;&gt;Städer</a></li>
-                    <li>&gt;&gt;Kairo</li>
+                    <li>&gt;&gt;<?php echo $_GET['stad'] ?></li>
                 </ol>
             </div>
             <div class="dropdown">
@@ -64,7 +64,7 @@ $query = "";
 
 				echo '<h2 id="city_name">' . $row['stad'] . '</h2>
 					<div class="description_box">
-						<img src="img/' . $row['img1'] . '" class="img_cities" alt="img">
+						<img src="img/' . $row['land'] . '/' . $row['stad'] . '/'. $row['img1'] . '" class="img_cities" alt="img">
 						<p id="city_description">' . $row['cityInfo'] . '
 						</p>
 					</div>';
@@ -75,16 +75,16 @@ $query = "";
 				<p class="white_text">
 					Klicka på bilderna för att boka just dessa aktiviteter
 				</p>
-				<a href="' . $row['imgLink1'] . '"><img src="img/' . $row['img2'] . '" class="activity_img" class="activity_left"></a>
-				<a href="' . $row['imgLink2'] .  '"><img src="img/' . $row['img3'] . '" class="activity_img" class="activity_right"></a>
+				<a href="' . $row['imgLink1'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img2'] . '" class="activity_img" class="activity_left"></a>
+				<a href="' . $row['imgLink2'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img3'] . '" class="activity_img" class="activity_left"></a>
 				<p class="activity_text" class="activity_left">
 					' . $row['imgText1'] . '
 				</p>
 				<p class="activity_text" class="activity_right"> 
 					' . $row['imgText2'] . '
 				</p>
-				<a href="'. $row['imgLink3'] .  '"><img src="img/' . $row['img4'] . '" class="activity_img" class="activity_left"></a>
-				<a href="' . $row['imgLink4'] .  '"><img src="img/' . $row['img5'] .  '" class="activity_img" class="activity_right"></a>
+				<a href="' . $row['imgLink3'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img4'] . '" class="activity_img" class="activity_left"></a>
+				<a href="' . $row['imgLink4'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img5'] . '" class="activity_img" class="activity_left"></a>
 				<p class="activity_text" class="activity_left">
 					' . $row['imgText3'] . '
 				</p>
@@ -108,49 +108,6 @@ $query = "";
 			}
 
 			?>
-
-
-			<!--<h2 id="city_name">Kairo</h2>
-			<div class="description_box">
-				<img src="img/kairo/Kairo.jpg" class="img_cities" alt="Kairo">
-				<p id="city_description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-				</p>
-			</div>
-			<div class="booking_box">
-				<h2 class="form_headings">Förslag på aktiviteter</h2>
-				<p class="white_text">
-					Klicka på bilderna för att boka just dessa aktiviteter
-				</p>
-				<a href="https://www.viatorcom.se/sv/7384/tours/Kairo/Flodkryssning-med-middag-pa-Nilen/d782-3124CAI16"><img src="img/kairo/flodkryssning_kairo.jpg" class="activity_img" class="activity_left"></a>
-				<a href="https://www.viatorcom.se/sv/7384/tours/Kairo/Privat-rundtur-Pyramiderna-och-Sfinxen-i-Giza-Egyptiska-museet-Khan-el-Khalili-basaren/d782-3124CAI01"><img src="img/kairo/pyramider_kairo.jpg" class="activity_img" class="activity_right"></a>
-				<p class="activity_text" class="activity_left">
-					Flodkryssning med mat
-				</p>
-				<p class="activity_text" class="activity_right">
-					Rundtur i pyramiderna
-				</p>
-				<a href="https://www.viatorcom.se/sv/7384/tours/Kairo/Local-Egyptian-Food-Tasting-and-Learning-From-Cairo/d782-11860P2"><img src="img/kairo/food_kairo.jpg" class="activity_img" class="activity_left"></a>
-				<a href="https://www.viatorcom.se/sv/7384/tours/Kairo/Safari-tour-on-a-horse-or-camel-for-sunset-at-Giza/d782-18966P43"><img src="img/kairo/safari_kairo.jpg" class="activity_img" class="activity_right"></a>
-				<p class="activity_text" class="activity_left">
-					Matlagningslektion
-				</p>
-				<p class="activity_text" class="activity_right">
-					Safari på kamel/häst
-				</p>
-				<h2 class="form_headings">Länkar till bokningssidor</h2>
-				<p class="white_text">
-					Hotell: www.hotell.se
-				</p>
-				<p class="white_text">
-					Flyg: www.flyg.se
-				</p>
-				<p class="white_text">
-					Aktiviteter: <a href="https://www.viatorcom.se/sv/7384/Kairo/d782-ttd">Viator</a>
-				</p>
-			</div>
-			-->
 		</section>
 	</body>
 </html>

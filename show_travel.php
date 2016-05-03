@@ -1,5 +1,5 @@
 <?php
-
+header('Content-type: text/html; charset=utf-8');
 $dbhost = "localhost";
 $dbuser = "root"; //Ange MySQL Namn här
 $dbpass = "hejhej123"; //Ange MySQL Lösenord här
@@ -8,6 +8,7 @@ $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 $conn->set_charset("utf8");
 
 $query = "";
+
 
 /*$query = "SELECT * FROM vacation";
 $result = mysqli_query($conn, $query);
@@ -24,7 +25,7 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html" charset="utf-8">
     <link type="text/css" rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
@@ -80,14 +81,14 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
                         . $row['land'] .
                     '</h2>
                 <div class="box" id="fact">
-                    <p>' . $row['countryInfo'] . '</p>
+                    <p>' .  $fetchAll[0]['countryInfo'] . '</p>
                 </div>
                 <div id="widget_box">
                     <div id="widget_head">
                         <h2>3 Städer</h2>
                     </div>
                     <div class="widget_content" id="widget_content_first">
-                        <a href="show_city.php?stad='. $row['stad'].  '">
+                        <a href="show_city.php?stad='.  $fetchAll[0]['stad'].  '">
                 <img alt="'  . (isset($fetchAll[0] ) ? $fetchAll[0]['stad']  : "img").  '" class="widget" src="img/'. strtolower($fetchAll[0]['land']) . '/' . strtolower($fetchAll[0]['stad']) .'/' . (isset($fetchAll[0] ) ? $fetchAll[0]['img1']  : "").  '">
 
                             <div id="widget_text">
@@ -96,7 +97,7 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
                         </a>
                     </div>
                     <div class="widget_content" id="widget_content_second">
-                        <a href="show_city.php?stad='. $row['stad'].  '">
+                        <a href="show_city.php?stad='.  $fetchAll[1]['stad'].  '">
                 <img alt="'  . (isset($fetchAll[1] ) ? $fetchAll[1]['stad']  : "img").  '" class="widget" src="img/' . strtolower($fetchAll[1]['land']) . '/' . strtolower($fetchAll[1]['stad']) .'/' . (isset($fetchAll[1] ) ? $fetchAll[1]['img1']  : "").  '">
 
                             <div id="widget_text">
@@ -105,8 +106,8 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
                         </a>
                     </div>
                     <div class="widget_content" id="widget_content_third">
-                        <a href="show_city.php?stad='. $row['stad'].  '">
-                <img alt="'  . (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : "img").  '" class="widget" src="img/'. strtolower($fetchAll[2]['land']) . '/' . strtolower($fetchAll[2]['stad']) .'/' . (isset($fetchAll[2] ) ? $fetchAll[2]['img1']  : "").  '">
+                        <a href="show_city.php?stad='.  $fetchAll[2]['stad'].  '">
+                <img alt="'  . (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : "img").  '" class="widget" src="img/'. strtolower($fetchAll[2]['land']) . '/' . strtolower($fetchAll[2]['stad']) .'/' . (isset($fetchAll[2] ) ? utf8_encode($fetchAll[2]['img1'])  : "").  '">
 
                             <div id="widget_text">
                                 <h2>'. (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : "") . '</h2>

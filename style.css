@@ -169,7 +169,6 @@ p {
     display: inline;
     margin-right: 65px;
     font-size: 35px;
-    text-decoration: none;
 }
 
 section {
@@ -555,7 +554,7 @@ label {
     height: 100%;
     width: 100%;
     z-index: -22;
-    position: fixed;
+    position: absolute;
 }
 
 #kairo_body {

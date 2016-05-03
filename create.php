@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 $dbhost = "localhost";
 $dbuser = "root"; //Ange MySQL Namn här
@@ -396,7 +396,7 @@ if(isset($_POST['imgText2'])) {
 
 if(isset($_POST['imgText3'])) {
     //uploadFile($_FILES['pic1']);
-    $query .= "'" . $_POST['imgText2'] . "',";
+    $query .= "'" . $_POST['imgText3'] . "',";
 } else {
     $query .= "'',";
 }
