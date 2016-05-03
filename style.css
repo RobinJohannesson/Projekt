@@ -555,7 +555,7 @@ label {
     height: 100%;
     width: 100%;
     z-index: -22;
-    position: absolute;
+    position: fixed;
 }
 
 #kairo_body {
