@@ -474,7 +474,7 @@ if(isset($_POST['activity_4'])) {
 }
 echo $query; */
 function uploadFile($file) {
-    $target_dir = "img/";
+    $target_dir = "img/" . strtolower($_POST['country']) . '/' . $_POST['city']. ;
     $target_file = $target_dir . basename($file["name"]);
     $uploadOk = 1;
     $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);

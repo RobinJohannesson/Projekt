@@ -33,6 +33,7 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
 </head>
 
 <body>
+<img src="img/Alexandria.jpg" class="background_image" alt="passande bakgrund för sidan">
     <header>
         <h1><a href="index.html">Horizon</a></h1>
         <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
@@ -87,7 +88,7 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
                     </div>
                     <div class="widget_content" id="widget_content_first">
                         <a href="show_city.php?stad='. $row['stad'].  '">
-                <img alt="'  . (isset($fetchAll[0] ) ? $fetchAll[0]['stad']  : "img").  '" class="widget" src="img/' . (isset($fetchAll[0] ) ? $fetchAll[0]['img1']  : "").  '">
+                <img alt="'  . (isset($fetchAll[0] ) ? $fetchAll[0]['stad']  : "img").  '" class="widget" src="img/'. strtolower($fetchAll[0]['land']) . '/' . strtolower($fetchAll[0]['stad']) .'/' . (isset($fetchAll[0] ) ? $fetchAll[0]['img1']  : "").  '">
 
                             <div id="widget_text">
                                 <h2>' .(isset($fetchAll[0] ) ? $fetchAll[0]['stad']  : "") . '</h2>
@@ -96,7 +97,7 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
                     </div>
                     <div class="widget_content" id="widget_content_second">
                         <a href="show_city.php?stad='. $row['stad'].  '">
-                    <img alt="'  . (isset($fetchAll[1] ) ? $fetchAll[1]['stad']  : "img").  '" class="widget" src="img/'.(isset($fetchAll[1] ) ? $fetchAll[1]['img1']  : "").  '">
+                <img alt="'  . (isset($fetchAll[1] ) ? $fetchAll[1]['stad']  : "img").  '" class="widget" src="img/' . strtolower($fetchAll[1]['land']) . '/' . strtolower($fetchAll[1]['stad']) .'/' . (isset($fetchAll[1] ) ? $fetchAll[1]['img1']  : "").  '">
 
                             <div id="widget_text">
                                 <h2>' . (isset($fetchAll[1] ) ? $fetchAll[1]['stad']  : "") . '</h2>
@@ -105,7 +106,7 @@ $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
                     </div>
                     <div class="widget_content" id="widget_content_third">
                         <a href="show_city.php?stad='. $row['stad'].  '">
-                    <img alt="'  . (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : 'img').  '" class="widget" src="img/'.(isset($fetchAll[2] ) ? $fetchAll[2]['img1']  : "").  '">
+                <img alt="'  . (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : "img").  '" class="widget" src="img/'. strtolower($fetchAll[2]['land']) . '/' . strtolower($fetchAll[2]['stad']) .'/' . (isset($fetchAll[2] ) ? $fetchAll[2]['img1']  : "").  '">
 
                             <div id="widget_text">
                                 <h2>'. (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : "") . '</h2>
