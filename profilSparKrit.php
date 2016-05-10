@@ -20,6 +20,7 @@ $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
                 <h1>
                     Sparade Kriterier
                 </h1>
+                <?php require('profile.php'); ?>
             </header>
             <div id="profKritSect_Surround">
                 <section id="profKritSect">
