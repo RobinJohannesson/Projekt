@@ -549,6 +549,10 @@ label {
 
 /*Visa städer*/
 
+.save_travel_btn {
+    margin-top: 50px !important;
+}
+
 .background_image {
     background-size: cover;
     height: 100%;
