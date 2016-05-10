@@ -20,6 +20,7 @@ if(!isset($_SESSION['user']) || $_SESSION['user'] != "Logged In") {
     <h1>
         Min sida
     </h1>
+    <?php require('profile.php'); ?>
 </header>
 <div id="wrapper">
     <section id="profSect">

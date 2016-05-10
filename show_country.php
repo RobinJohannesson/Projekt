@@ -57,20 +57,7 @@ echo $query2;
                     <li class="active">&gt;&gt;Länder</li>
                 </ol>
             </div>
-            <div class="dropdown">
-            <div class="dropbtn">
-                <img src="img/arrow_dropdown.png" class="arrow_for_dropdown">
-                <div class="dropdown_name">
-                    <p>Wade</p>
-                    <p>Wilson</p>
-                </div>
-                <img src="img/deadpool_avatar.png" class="avatar_img">
-            </div>
-            <div class="dropdown_content">
-                <a href="#">Inställningar</a>
-                <a href="#">Logga ut</a>
-            </div>
-        </div>
+            <?php require('profile.php'); ?>
         </header>
         <div id="container_country">
            <div class="country_box">

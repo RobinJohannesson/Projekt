@@ -23,6 +23,7 @@ if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
                 Horizon
             </h1>
         <h2>Du väljer kriterier, Vi tar fram resan</h2>
+        <?php require('profile.php'); ?>
     </header>
     <div id="container">
        <form action="" method="post" id="login_box">
