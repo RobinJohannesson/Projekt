@@ -12,7 +12,6 @@ $query1 = "";
 include('save.php');
 
 
-
 $input = "";
 
 
@@ -32,16 +31,10 @@ $result = mysqli_query($conn, $query);
 
 $result1 = mysqli_query($conn, $query2);
 
-$contriesWhoCriteriaHighest = array();
-
-/*
-while ($row = mysqli_fetch_assoc($result1)) {
-    $contriesWhoCriteriaHighest[] = $row['land'];
-}
-
-
-*/
-
+//$contriesWhoCriteriaHighest = array();
+error_reporting(0);
+@ini_set('display_errors', 0);
+echo $query2;
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -82,10 +75,11 @@ while ($row = mysqli_fetch_assoc($result1)) {
         <div id="container_country">
            <div class="country_box">
                <?php
+
                while ($row = mysqli_fetch_assoc($result1)) {
 
-                   echo '<a href="show_travel.html?id='. $row['id'] .'">
-                   <img class="country_widget" id="first_country_widget" src="img/' . $row['img1'] . '">
+                   echo '<a href="show_travel.php?id='. $row['id'] .'">
+                   <img class="country_widget" id="first_country_widget" src="img/' . $row['land'] . '/' . $row['stad'].'/' . $row['img1'] . '">
 
                    <div class="country_text">
                         <h2>' . $row['land'] . '</h2>
@@ -100,8 +94,8 @@ while ($row = mysqli_fetch_assoc($result1)) {
                <?php
                while ($row = mysqli_fetch_assoc($result1)) {
 
-                   echo '<a href="show_travel.html?id='. $row['id'] .'">
-                   <img class="country_widget" id="first_country_widget" src="img/' . $row['img1'] . '">
+                   echo '<a href="show_travel.php?id='. $row['id'] .'">
+                   <img class="country_widget" id="first_country_widget" src="img/' . $row['land'] . '/' . $row['stad'].'/' . $row['img1'] . '">
 
                    <div class="country_text">
                         <h2>' . $row['land'] . '</h2>
@@ -116,8 +110,8 @@ while ($row = mysqli_fetch_assoc($result1)) {
                <?php
                while ($row = mysqli_fetch_assoc($result1)) {
 
-                   echo '<a href="show_travel.html?id='. $row['id'] .'">
-                   <img class="country_widget" id="first_country_widget" src="img/' . $row['img1'] . '">
+                   echo '<a href="show_travel.php?id='. $row['id'] .'">
+                   <img class="country_widget" id="first_country_widget" src="img/' . $row['land'] . '/' . $row['stad'].'/' . $row['img1'] . '">
 
                    <div class="country_text">
                         <h2>' . $row['land'] . '</h2>

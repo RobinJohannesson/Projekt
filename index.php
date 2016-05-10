@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+if(isset($_GET['status']) && $_GET['status'] == "logout") {
+    unset($_SESSION['user']);
+}
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -21,7 +25,7 @@ session_start();
                 <li>&gt;&gt;Start</li>
             </ol>
         </div>
-            <div class="dropdown">
+          <!--  <div class="dropdown">
             <div class="dropbtn">
                 <img src="img/arrow_dropdown.png" class="arrow_for_dropdown">
                 <div class="dropdown_name">
@@ -34,7 +38,8 @@ session_start();
                 <a href="#">Inställningar</a>
                 <a href="#">Logga ut</a>
             </div>
-        </div>
+        </div> -->
+            <?php require('profile.php'); ?>
         </header>
         <div id="wrapper_nr2">
             <nav id="indexNav">

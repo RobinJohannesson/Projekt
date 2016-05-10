@@ -30,8 +30,8 @@ $query = "";
                 <ol class="breadcrumb">
                     <li><a href="index.html">&gt;&gt;Start</a></li>
                     <li><a href="kriterier.html">&gt;&gt;Kriterier</a></li>
-                    <li><a href="show_country.html">&gt;&gt;Länder</a></li>
-                    <li><a href="show_travel">&gt;&gt;Städer</a></li>
+                    <li><a href="show_country.php">&gt;&gt;Länder</a></li>
+                    <li><a href="show_travel.php">&gt;&gt;Städer</a></li>
                     <li>&gt;&gt;<?php echo $_GET['stad'] ?></li>
                 </ol>
             </div>

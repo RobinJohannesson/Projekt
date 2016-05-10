@@ -20,6 +20,9 @@ $numbers = array();
 $numbers = UniqueRandomNumbersWithinRange(0, $num_rows-1, 3);
 
 */
+
+error_reporting(0);
+@ini_set('display_errors', 0);
 ?>
 <!DOCTYPE HTML>
 <html>
