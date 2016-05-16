@@ -12,7 +12,7 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
+article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
@@ -78,13 +78,35 @@ body {
     max-width: 1500px;
     min-width: 300px;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 30px;save
     margin-bottom: 30px;
 }
 #wrapper_nr3 {
     margin: auto;
     height: auto;
-    width: 850px;
+    width: 900px;
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 40px 5px rgba(50, 50, 50, 1);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#wrapper_nr4 {
+    margin: auto;
+    height: auto;
+    width: 1000px;
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 40px 5px rgba(50, 50, 50, 1);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#wrapper_nr5 {
+    margin: auto;
+    height: auto;
+    width: 950px;
     background: rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 40px 5px rgba(50, 50, 50, 1);
     border-radius: 15px;
@@ -108,14 +130,14 @@ h1 {
     margin: 0;
     padding-top: 20px;
     color: white;
-    font-size: 66px;
+    font-size: 56px;
     font-family: "Cinzel";
     text-decoration: underline;
 }
 
 h2 {
     color: white;
-    font-size: 30px;
+    font-size: 27px;
     font-family: "Cinzel";
 }
 
@@ -134,8 +156,8 @@ p {
     font-size: 17px;
 }
 
-.under-rubrik-text{
-    margin-top: 15px;
+.under_rubrik_text{
+    margin-top: 20px;
 }
 
 #indexNav {
@@ -146,7 +168,7 @@ p {
 
 #indexNavUl {
     list-style-type: none;
-    margin: 0 auto;
+    margin-top: 90px
     text-align: center;
 }
 
@@ -154,21 +176,22 @@ p {
     color: white;
     display: inline;
     font-size: 60px;
-    margin-right: 65px;
+    margin-right: 45px;
 }
 
 .indexNavLi_2 {
     color: white;
     display: inline;
-    margin-right: 65px;
+    margin-right: 45px;
     font-size: 35px;
 }
 
 .indexNavA {
     color: white;
     display: inline;
-    margin-right: 65px;
-    font-size: 35px;
+    margin-right: 45px;
+    font-size: 25px;
+    font-family: "Cinzel";
 }
 
 section {
@@ -345,32 +368,12 @@ label {
     width: 200px;
 }
 
-#widget_first {
-    background-image: url(img/Kairo.jpg);
-    background-size: cover;
-}
-
-#widget_second {
-    background-image: url(img/Alexandria.jpg);
-    background-size: cover;
-}
-
-#widget_third {
-    background-image: url(img/Luxor.jpg);
-    background-size: cover;
-}
-
-#widget_text {
+.widget_text {
     text-align: center;
     margin-top: 15px;
 }
 
 /*Visa länder*/
-
-.cloud{
-    background-image: url(img/cloud.jpg);
-    background-size: cover;
-}
 
 #container_country {
     border-radius: 15px;
@@ -393,7 +396,7 @@ label {
 
 @keyframes show_country_open {
     from {width: 0px; height: 0px;}
-    to {width: 450px; height 450px;}
+    to {width: 450px; height: 450px;}
 }
 
 .country_widget {
@@ -405,21 +408,6 @@ label {
     animation-timing-function: cubic-bezier(0,1.31,.43,1);
 }
 
-#first_country_widget{
-    background-image: url(img/egypt_country.jpg);
-    background-size: cover;
-}
-
-#second_country_widget{
-    background-image: url(img/schweiz_country.jpg);
-    background-size: cover;
-}
-
-#third_country_widget{
-    background-image: url(img/grekland_country.jpg);
-    background-size: cover;
-}
-
 .country_text {
     height: 50px;
     text-align: center;
@@ -428,18 +416,18 @@ label {
 
 /*Profilsida*/
 
-.headerProf {
+#sparResa_body {
+	background-image:url(img/beach_horizon_wide.jpg);
+	background-size: cover;
+}
+
+/*.headerProf {
     text-align: center;
     height: 180px;
     width: 100%;
     background: rgba(0, 0, 0, 0.15);
     margin-bottom: 40px;
-}
-
-#profilWrapper {
-    width: auto;
-    height: auto;
-}
+}*/
 
 #profSect {
     /*margin: 0 auto;*/
@@ -449,46 +437,63 @@ label {
     margin-top: 25px;
 }
 
-#profKritSect {
-    width: 100%;
-    height: 450px;
-}
-
 #profSectDiv {
     float: left;
     margin: auto;
     margin-bottom: 20px;
-    width: 800px;
+    width: 1000px;
     height: 100%;
+}
+
+.page_descr{
+    margin-top: 20px;
+    width: 260px;
 }
 
 #descriptSparRes {
     float: left;
     /*margin-left: 40px;*/
-    margin-bottom: 40px;
-    height: 120px;
+    margin-bottom: 20px;
+    height: 90px;
     width: 150px;
     border-bottom: 1px solid;
 }
-#profilNav1 {
-    margin: auto;
-    width: 800px;
+
+#profilNav1 {    
+    width: 180px;
     height: 450px;
-    text-align: center;
+    float: left;
+    border-top: 1px solid;
+    margin-top: 53px;
 }
+
 #profilNav2 {
     float: left;
     margin-left: 10px;
+    margin-top: 50px;
     width: 150px;
-    height: 250px;
+    height: 110px;
+    text-align: left;
+    /*border-bottom: 1px solid;*/
+}
+
+#profilNav25{
+   float: left;
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 150px;
+    height: 220px;
     text-align: left;
     border-bottom: 1px solid;
 
 }
-#profilNavUl {
-    float: left;
-    margin-top: -10px;
+.profilNavUl {
+    /*float: left;*/
+    margin-top: 10px;
+    margin-left: 10px;
+    list-style:disc;
 }
+
 .profilNavLi_1 {
     display: inline;
     margin-left: 50px;
@@ -506,45 +511,92 @@ label {
 .profilNavli_3 {
     float: left;
 }
+
+.a_black{
+    color: black;
+}
+
 #mainContent {
     float: left;
     height: auto;
-    width: 300px;
-}
-#savedTrip {
-    background-image:url(img/egypt_pyramid.jpg);
-    background-size: cover;
     margin-left: 100px;
-    margin-top: 10px;
+    width: 170px;
+    height: auto;
+}
+
+mainContent_2{
+    
+}
+
+.third-effect .mask {
+    opacity: 0;
+    overflow: visible;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    width: 170px;
+    height: 170px;
+}
+
+.third-effect .mask p {
+    color: white;
+    text-align: center;
+    padding-top: 76.5px;
+}
+
+.third-effect{
     float: left;
     width: 170px;
     height: 170px;
-    border-radius: 50%;
-}
-#savedTrip2 {
-    background-image: url(img/eiffel-tower.jpg);
-    background-size: cover;
-    margin-left: 100px;
     margin-top: 80px;
-    float: left;
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
 }
-#savedTrip3 {
-    background-image: url(img/chamonix.jpg);
-    background-size: cover;
-    margin-left: 100px;
-    margin-top: 80px;
-    float: left;
+
+.third-effect a.info {
+    position: absolute;
+    margin-left: -170px;
+    opacity: 0;
+    transition: opacity 0.5s 0s ease-in-out;
+    text-decoration: none;
+}
+
+.third-effect:hover .mask {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.third-effect:hover a.info {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.third-effect .mask {
+    opacity: 0;
+    overflow: visible;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
     width: 170px;
     height:170px;
-    border-radius: 50%;
 }
+
+.savedTrip {
+    float: left;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+
+#savedTrip1 {
+    margin-top: 50px;
+}
+
 #countryDesc {
     float: right;
     width: 200px;
     height: 300px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.btn_2{
+    margin-left: 266px !important;
 }
 
 /*Visa städer*/
@@ -559,11 +611,6 @@ label {
     width: 100%;
     z-index: -22;
     position: absolute;
-}
-
-#kairo_body {
-	background-image: url(img/background.jpg);
-	background-size: cover;
 }
 
 .show_city {
@@ -592,21 +639,25 @@ label {
 }
 
 .description_box {
-	width: 650px;
+	width: 500px;
 	float: left;
 	color: white;
+    margin-left: 40px;
 }
 
 #city_description {
 	text-align: left;
 	color: white;
+    font-size: 18px;
+	margin-left: 20px;
 }
 
 .booking_box {
 	width: 450px;
 	float: right;
-	height: 400px;
+	height: auto;
 	border-radius: 15px;
+    margin-right: 40px;
 }
 
 .activity_img {
@@ -614,13 +665,16 @@ label {
     height: 118px;
     width: 210px;
 }
+.bottom_pictures {
+	margin-top: 15px;
+}
 
 .activity_left {
-	float: left;
+	margin-right: 30px;
 }
 
 .activity_right {
-	float: right;
+    margin-left: 30px;
 }
 
 .activity_text {
@@ -631,31 +685,44 @@ label {
 .white_text {
 	color: white;
 }
+#booking_heading {
+	margin-top: 15px;
+}
+
+.booking_links {
+	text-align: left;
+	font-size: 18px;
+	margin-left: 10px;
+}
 
 /*Spara kriterier*/
-#profKritSect_Surround{
-    background: rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 40px 5px rgba(50, 50, 50, 1);
-    width: 100%;
-    height: 450px;
+.mainContent_2 {
     margin: auto;
+    height: 410px;
+    width: 380px;
+    margin-top: 50px;
+}
+#mainContent_3{
+    float: right;
+    margin-top: 50px;
+    margin-right: 180px;
+    width: 450px;
+    height: auto;
 }
 #savedKritSubHeader {
-    float: right;
-    margin-right: 440px;
-    margin-bottom: 20px;
-    height: 70px;
-    width: 500px;
+    margin: auto;
+    /*margin-right: 100px;
+    margin-bottom: 20px;*/
+    height: 35px;
+    width: 280px;
     border-bottom: 1px solid;
 }
 #savedKritList {
     float: left;
     margin-top: 20px;
-    margin-left: 290px;
     height: 300px;
-    width: 300px;
-    overflow: scroll;
-    background-color: cadetblue;
+    width: 380px;
+    overflow-x: hidden;
 }
 #savedKritListCheckbox {
     display: inline;
@@ -735,8 +802,6 @@ input[type=submit] {
 }
 
 .avatar_img{
-    background-image: url(img/deadpool_avatar.png);
-    background-size: cover;
     height: 40px;
     width: 40px;
     float: right;
@@ -746,11 +811,15 @@ input[type=submit] {
     float: left;
 }
 
+.dropdown_name p {
+    color: white;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
     float: right;
-    margin-top: 16px;
+    margin-top: 9px;
     height: 40px;
 }
 
@@ -807,7 +876,7 @@ input[type=submit] {
     position: relative;
     display: inline-block;
     float: left;
-    margin-top: 44px;
+    margin-top: 37px;
 }
 
 
