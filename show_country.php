@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 $dbhost = "localhost";
 $dbuser = "root"; //Ange MySQL Namn här
@@ -34,7 +34,6 @@ $result1 = mysqli_query($conn, $query2);
 //$contriesWhoCriteriaHighest = array();
 error_reporting(0);
 @ini_set('display_errors', 0);
-echo $query2;
 ?>
 <!DOCTYPE HTML>
 <html>

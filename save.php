@@ -345,9 +345,9 @@ if(!empty($city)) {
 
 } else {
     if($kontinent != 'Ingen preferens') {
-    $query2 = "SELECT * FROM countries WHERE kontinent = '$kontinent' LIMIT 0,3";
+    $query2 = "SELECT * FROM countries WHERE kontinent = '$kontinent' GROUP BY(land) LIMIT 0,3";
     } else {
-        $query2 = "SELECT * FROM countries LIMIT 0,3";
+        $query2 = "SELECT * FROM countries GROUP BY(land)  LIMIT 0,3";
     }
 }
 //$query2 = "SELECT ($city) 'summa', land, stad, img1, id FROM countries  WHERE kontinent = '$kontinent' GROUP BY(land) ORDER BY summa DESC";

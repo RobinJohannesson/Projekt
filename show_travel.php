@@ -36,8 +36,26 @@ error_reporting(0);
     <title>Horizon</title>
 </head>
 
-<body>
-<img src="img/Alexandria.jpg" class="background_image" alt="passande bakgrund för sidan">
+<?php
+if(isset($_GET['id'])) {
+    $query = "SELECT * FROM countries WHERE id = " . $_GET['id'];
+
+    $result = mysqli_query($conn, $query);
+    $fetch = mysqli_fetch_assoc($result);
+
+}
+
+
+?>
+<style>
+    #alter {
+
+        background-image: url(<?=strtolower('img/'. $fetch['land']) . '/' . strtolower($fetch['stad']) .'/' . $fetch['img1']?>);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<body id="alter">
     <header>
         <h1><a href="index.html">Horizon</a></h1>
         <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
@@ -49,7 +67,20 @@ error_reporting(0);
                 <li>&gt;&gt;Städer</li>
             </ol>
         </div>
-        <?php require('profile.php'); ?>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <img src="img/arrow_dropdown.png" class="arrow_for_dropdown">
+                <div class="dropdown_name">
+                    <p>Wade</p>
+                    <p>Wilson</p>
+                </div>
+                <img src="img/deadpool_avatar.png" class="avatar_img">
+            </div>
+            <div class="dropdown_content">
+                <a href="#">Inställningar</a>
+                <a href="#">Logga ut</a>
+            </div>
+        </div>
     </header>
     <div id="wrapper">
         <?php
