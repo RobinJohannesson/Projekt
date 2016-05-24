@@ -798,85 +798,19 @@ input[type=submit] {
 
 
 /* Dropdown Button */
-.dropbtn {
-    background: rgba(0, 0, 0, 0.15);
-    color: white;
-    height: 40px;
-    width: auto;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 4px;
-}
 
-.avatar_img{
-    height: 40px;
-    width: 40px;
-    float: right;
-}
-
-.dropdown_name{
-    float: left;
-}
-
-.dropdown_name p {
-    color: white;
+.dropdown a {
+    text-decoration: none;
+    font-size: 30px;
 }
 
 .dropdown {
     position: relative;
+    background: rgba(0, 0, 0, 0.15);
     display: inline-block;
     float: right;
-    margin-top: 9px;
-    height: 40px;
-}
-
-.dropdown_content {
-    display: none;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.15);
-    width: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    right: 0;
-}
-
-.dropdown_content a {
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    display: block;
-    font-size: 20px;
-}
-
-.dropdown_content a:hover {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-.dropdown:hover .dropdown_content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-.arrow_for_dropdown{
-    width: 40px;
-    height: 40px;
-    float: left;
-}
-
-@keyframes bounce_dropdown_arrow {
-	0%, 100% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(-5px);
-	}
-}
-
-.dropdown:hover .arrow_for_dropdown{
-    animation: bounce_dropdown_arrow 0.5s;
+    margin-top: 23px;
+    height: 33px;
 }
 
 .container {
