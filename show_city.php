@@ -35,7 +35,9 @@ $query = "";
                     <li>&gt;&gt;<?php echo $_GET['stad'] ?></li>
                 </ol>
             </div>
-            <?php require('profile.php'); ?>
+            <div class="dropdown">
+            <a href="kontakt.html">Om oss</a>
+        </div>
 		</header>
 		<section class="show_city">
 

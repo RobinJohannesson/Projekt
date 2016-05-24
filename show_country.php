@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 $dbhost = "localhost";
 $dbuser = "root"; //Ange MySQL Namn här
@@ -56,7 +56,9 @@ error_reporting(0);
                     <li class="active">&gt;&gt;Länder</li>
                 </ol>
             </div>
-            <?php require('profile.php'); ?>
+            <div class="dropdown">
+            <a href="kontakt.html">Om oss</a>
+        </div>
         </header>
         <div id="container_country">
            <div class="country_box">
