@@ -17,10 +17,10 @@ if(isset($_SESSION['id'])) {
 
 if(isset($_POST['kontinent'])) {
     $kontinent = $_POST['kontinent'];
-    $query  = "INSERT INTO onskning(id, kontinent) VALUES($id, '$kontinent')";
+    //$query  = "INSERT INTO onskning(id, kontinent) VALUES($id, '$kontinent')";
+    $query = "UPDATE onskning SET kontinent = '$kontinent' WHERE id = $id";
     $result = mysqli_query($connection  , $query);
     $query1 .= " OR kontinent = " .$kontinent;
-
 }
 
 if(isset($_POST['bergsklattring']) && $_POST['bergsklattring'] == "on") {
@@ -57,6 +57,13 @@ if(isset($_POST['safari']) && $_POST['safari'] == "on") {
     $query1 .= " OR safari = 1";
     $city .= "+ safari";
 }
+//1h 45m
+//Programmerat bättre. Mer klassuppdelning.
+//Jobba
+
+//Administratör system
+//Validering på några inmatningfält
+//
 
 if(isset($_POST['skidor']) && $_POST['skidor'] == "on") {
     $query  = "UPDATE aventyr SET skidor = 1 WHERE id = $id";
@@ -328,8 +335,22 @@ if(isset($_POST['other_transport']) && $_POST['other_transport'] == "on") {
 
 }
 
-$query2 = "SELECT ($city) 'summa', land, stad, img1, id FROM countries  WHERE kontinent = '$kontinent' GROUP BY(land) ORDER BY summa DESC";
+if(!empty($city)) {
+    if($kontinent != 'Ingen preferens') {
+        $query2 = "SELECT ($city) 'summa', land, stad, img1, id FROM countries  WHERE kontinent = '$kontinent' GROUP BY(land) ORDER BY summa DESC LIMIT 0,3";
+    }
+    else {
+        $query2 = "SELECT ($city) 'summa', land, stad, img1, id FROM countries  GROUP BY(land) ORDER BY summa DESC LIMIT 0,3";
+    }
 
+} else {
+    if($kontinent != 'Ingen preferens') {
+    $query2 = "SELECT * FROM countries WHERE kontinent = '$kontinent' LIMIT 0,3";
+    } else {
+        $query2 = "SELECT * FROM countries LIMIT 0,3";
+    }
+}
+//$query2 = "SELECT ($city) 'summa', land, stad, img1, id FROM countries  WHERE kontinent = '$kontinent' GROUP BY(land) ORDER BY summa DESC";
 
 //header('Location: profilSparKrit.php');
 
