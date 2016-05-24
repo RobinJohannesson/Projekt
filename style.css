@@ -397,6 +397,10 @@ label {
 
 /*Visa länder*/
 
+.cloud {
+    background-image: url(img/cloud.jpg);
+}
+
 #container_country {
     border-radius: 15px;
 	margin: 30px auto 0px auto;
