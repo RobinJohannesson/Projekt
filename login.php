@@ -17,7 +17,7 @@ if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
     <title>Horizon</title>
 </head>
 
-<body>
+<body id="body_login">
     <header>
         <h1>
                 Horizon

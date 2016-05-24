@@ -16,7 +16,7 @@ if(isset($_GET['status']) && $_GET['status'] == "logout") {
         <link rel="icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
         <title>Horizon Start</title>
     </head>
-    <body>
+    <body id="body_index">
         <header>
             <h1><a href="index.html">Horizon</a></h1>
             <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
