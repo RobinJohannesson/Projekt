@@ -290,6 +290,12 @@ label {
 
 
 /* Kontakt*/
+#body_kontakt{
+    margin: auto;
+    background-image: url(img/kontakt3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .box {
     width: 400px;
@@ -422,16 +428,7 @@ label {
 	background-size: cover;
 }
 
-/*.headerProf {
-    text-align: center;
-    height: 180px;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.15);
-    margin-bottom: 40px;
-}*/
-
 #profSect {
-    /*margin: 0 auto;*/
     height: 100%;
     text-align: center;
     width: 100%;
@@ -711,40 +708,6 @@ mainContent_2{
 	margin-left: 10px;
 }
 
-/*Spara kriterier*/
-.mainContent_2 {
-    margin: auto;
-    height: 410px;
-    width: 380px;
-    margin-top: 50px;
-}
-#mainContent_3{
-    float: right;
-    margin-top: 50px;
-    margin-right: 180px;
-    width: 450px;
-    height: auto;
-}
-#savedKritSubHeader {
-    margin: auto;
-    /*margin-right: 100px;
-    margin-bottom: 20px;*/
-    height: 35px;
-    width: 280px;
-    border-bottom: 1px solid;
-}
-#savedKritList {
-    float: left;
-    margin-top: 20px;
-    height: 300px;
-    width: 380px;
-    overflow-x: hidden;
-}
-#savedKritListCheckbox {
-    display: inline;
-    margin-left: 15px;
-}
-
 /*Login & Register*/
 
 #body_login{
@@ -752,6 +715,17 @@ mainContent_2{
     background-image: url(img/beach_horizon5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#body_logReg{
+    margin: auto;
+    background-image: url(img/beach_horizon2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_label{
+    color: white;
 }
 
 #login_box {
