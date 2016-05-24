@@ -806,7 +806,6 @@ input[type=submit] {
 
 .dropdown {
     position: relative;
-    background: rgba(0, 0, 0, 0.15);
     display: inline-block;
     float: right;
     margin-top: 23px;
