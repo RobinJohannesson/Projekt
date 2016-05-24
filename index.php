@@ -44,9 +44,9 @@ if(isset($_GET['status']) && $_GET['status'] == "logout") {
         <div id="wrapper_nr2">
             <nav id="indexNav">
                 <ul id="indexNavUl">
-                    <li class="indexNavLi_1">&middot;</li>
+                    <!--<li class="indexNavLi_1">&middot;</li>-->
                     <li class="indexNavLi_1"><a href="kriterier.html" class="indexNavA">Bestäm kriterier</a></li>
-                    <li class="indexNavLi_1">&middot;</li>
+                    <!--<li class="indexNavLi_1">&middot;</li>-->
                     <?php
                     if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
                         echo '<li class="indexNavLi_2"><a href="profilSparKrit.php" class="indexNavA">Sparade Resor/Kriterier</a></li>';
@@ -54,7 +54,7 @@ if(isset($_GET['status']) && $_GET['status'] == "logout") {
                         echo '<li class="indexNavLi_2"><a href="login.php" class="indexNavA">Logga in</a></li>';
                     }
                     ?>
-                    <li class="indexNavLi_1">&middot;</li>
+                    <!--<li class="indexNavLi_1">&middot;</li>-->
                     <li class="indexNavLi_2"><a href="kontakt.html" class="indexNavA">Om oss</a></li>
                    <!-- <li class="indexNavLi_1">&middot;</li> -->
                 </ul>
