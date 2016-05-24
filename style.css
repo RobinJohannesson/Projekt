@@ -75,8 +75,7 @@ table {
 }
 #wrapper_nr2 {
     margin: auto;
-    max-width: 1500px;
-    min-width: 300px;
+    width: 200px;
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -103,17 +102,7 @@ table {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-#wrapper_nr5 {
-    margin: auto;
-    height: auto;
-    width: 950px;
-    background: rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 40px 5px rgba(50, 50, 50, 1);
-    border-radius: 15px;
-    padding: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+
 header {
     text-align: center;
     height: 180px;
@@ -155,13 +144,19 @@ p {
     color: black;
     font-size: 17px;
 }
-
+.p_img{
+    position: absolute;
+    margin-top: -47;
+    margin-left: 39px;
+    font-size: 23px;
+    color: white;
+    
+}
 .under_rubrik_text{
     margin-top: 20px;
 }
 
 #indexNav {
-    margin-top: 30px;
     margin-bottom: 60px;
     width: 100%;
     text-align: center;
@@ -173,11 +168,21 @@ p {
     text-align: center;
 }
 
+#bestKritImg_box{
+    margin: auto;
+    display: inline-block;
+}
+#bestKritImg_box img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
 .indexNavLi_1 {
     color: white;
-    display: inline;
+    
     font-size: 60px;
     margin-right: 45px;
+    
 }
 
 .indexNavLi_2 {
