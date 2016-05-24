@@ -319,6 +319,10 @@ label {
     margin-right: 250px;
 }
 
+#kontakt p a {
+    color: white;
+}
+
 /*Visa resor*/
 
 #fact {
