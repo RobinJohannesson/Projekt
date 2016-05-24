@@ -144,7 +144,7 @@ p {
     color: black;
     font-size: 17px;
 }
-.p_img{
+.p_img {
     position: absolute;
     margin-top: -47;
     margin-left: 39px;
@@ -152,7 +152,7 @@ p {
     color: white;
     
 }
-.under_rubrik_text{
+.under_rubrik_text {
     margin-top: 20px;
 }
 
@@ -164,22 +164,21 @@ p {
 
 #indexNavUl {
     list-style-type: none;
-    margin-top: 90px
+    margin-top: 90px;
     text-align: center;
 }
 
-#bestKritImg_box{
+#bestKritImg_box {
     margin: auto;
     display: inline-block;
 }
-#bestKritImg_box img{
+#bestKritImg_box img {
     width: 200px;
     height: 200px;
     position: relative;
 }
 .indexNavLi_1 {
     color: white;
-    
     font-size: 60px;
     margin-right: 45px;
     
@@ -301,7 +300,7 @@ label {
 }
 
 /* Kontakt*/
-#body_kontakt{
+#body_kontakt {
     margin: auto;
     background-image: url(img/kontakt3.jpg);
     background-repeat: no-repeat;
@@ -314,18 +313,18 @@ label {
     margin: 45px auto;
 }
 
-.box p{
+.box p {
     color: white;
     padding: 15px;
     font-size: 20px;
 }
 
-#syfte{
+#syfte {
     float: left;
     margin-left: 250px;
 }
 
-#kontakt{
+#kontakt {
     float: right;
     margin-right: 250px;
 }
@@ -354,8 +353,12 @@ label {
 }
 
 @keyframes widget_content_open {
-    from {margin-left: -150px;}
-    to {width: 200px;}
+    from {
+        margin-left: -150px;
+    }
+    to {
+        width: 200px;
+    }
 }
 
 .widget_content {
@@ -416,13 +419,17 @@ label {
     margin: 0px 40px;
 }
 
-.country_box a{
+.country_box a {
     text-decoration: none;
 }
 
 @keyframes show_country_open {
-    from {width: 0px; height: 0px;}
-    to {width: 450px; height: 450px;}
+    from {
+        width: 0px; height: 0px;
+    }
+    to {
+        width: 450px; height: 450px;
+    }
 }
 
 .country_widget {
@@ -443,7 +450,7 @@ label {
 /*Profilsida*/
 
 #sparResa_body {
-	background-image:url(img/beach_horizon_wide.jpg);
+	background-image: url(img/beach_horizon_wide.jpg);
 	background-size: cover;
 }
 
@@ -462,7 +469,7 @@ label {
     height: 100%;
 }
 
-.page_descr{
+.page_descr {
     margin-top: 20px;
     width: 260px;
 }
@@ -494,7 +501,7 @@ label {
     /*border-bottom: 1px solid;*/
 }
 
-#profilNav25{
+#profilNav25 {
    float: left;
     margin-left: 10px;
     margin-top: 50px;
@@ -508,7 +515,7 @@ label {
     /*float: left;*/
     margin-top: 10px;
     margin-left: 10px;
-    list-style:disc;
+    list-style: disc;
 }
 
 .profilNavLi_1 {
@@ -529,7 +536,7 @@ label {
     float: left;
 }
 
-.a_black{
+.a_black {
     color: black;
 }
 
@@ -541,7 +548,7 @@ label {
     height: auto;
 }
 
-mainContent_2{
+mainContent_2 {
     
 }
 
@@ -560,7 +567,7 @@ mainContent_2{
     padding-top: 76.5px;
 }
 
-.third-effect{
+.third-effect {
     float: left;
     width: 170px;
     height: 170px;
@@ -591,7 +598,7 @@ mainContent_2{
     border-radius: 50%;
     transition: all 0.4s ease-in-out;
     width: 170px;
-    height:170px;
+    height: 170px;
 }
 
 .savedTrip {
@@ -612,10 +619,10 @@ mainContent_2{
     margin-top: 50px;
     margin-right: 50px;
 }
-.btn_2{
+.btn_2 {
     margin-left: 266px !important;
 }
-.editSavedTrip_form{
+.editSavedTrip_form {
     width: 300px !important;
     margin-right: 5px !important;
     margin-top: 30px;
@@ -624,7 +631,7 @@ mainContent_2{
     padding: 0 !important;
     
 }
-.editSavedTrip_btn{
+.editSavedTrip_btn {
     margin-top: 4px !important;
     margin-bottom: 5px !important;
     margin-left: 5px !important;
@@ -729,21 +736,21 @@ mainContent_2{
 
 /*Login & Register*/
 
-#body_login{
+#body_login {
     margin: auto;
     background-image: url(img/beach_horizon5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#body_logReg{
+#body_logReg {
     margin: auto;
     background-image: url(img/beach_horizon2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.login_label{
+.login_label {
     color: white;
 }
 
