@@ -31,7 +31,7 @@ $query = "";
         background-size: cover;
     }
 </style>
-    <body id="alter">
+    <body id="body_resa">
 		<header>
 			<h1><a href="index.html">Horizon</a></h1>
             <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
