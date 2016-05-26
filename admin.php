@@ -1,11 +1,14 @@
 <?php
+
 session_start();
 if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
+   
 } else {
-	header('Location: index.php');
+	header('Location: index.html');
 }
 
 ?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -16,7 +19,7 @@ if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
 	<link rel="icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
 	<title>Horizon Start</title>
 </head>
-<body>
+<body id="body_admin">
 <header>
 	<h1><a href="index.html">Horizon</a></h1>
 	<h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
@@ -27,49 +30,39 @@ if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
 		</ol>
 	</div>
 	<div class="dropdown">
-		<div class="dropbtn">
-			<img src="img/arrow_dropdown.png" alt="Meny-pil" class="arrow_for_dropdown">
-			<div class="dropdown_name">
-				<p>Wade</p>
-				<p>Wilson</p>
-			</div>
-			<img src="img/deadpool_avatar.png" alt="Profilbild" class="avatar_img">
-		</div>
-		<div class="dropdown_content">
-			<a href="#">Inställningar</a>
-			<a href="#">Logga ut</a>
-		</div>
-	</div>
+            <a href="kontakt.html">Om oss</a>
+        </div>
 </header>
-<div id="wrapper_nr2">
+<div id="wrapper">
 	<form action="create.php" method="post" id="admin_box" enctype="multipart/form-data">
+        <p>Bakgrund för landet</p>
 		<input type="file" name="pic1" accept="image/*">
+        <br><br>
+        <p>Första bilden för aktiviten</p>
 		<input type="file" name="pic2" accept="image/*">
 		<input type="text" id="activity_1" name="activity_1" placeholder="Länk till första aktiviteten">
+        <p>Andra bilden för aktiviten</p>
 		<input type="file" name="pic3" accept="image/*">
 		<input type="text" id="activity_2" name="activity_2" placeholder="Länk till andra aktiviteten">
+        <p>Tredje bilden för aktiviten</p>
 		<input type="file" name="pic4" accept="image/*">
 		<input type="text" id="activity_3" name="activity_3" placeholder="Länk till tredje aktiviteten">
+        <p>Fjärde bilden för aktiviten</p>
 		<input type="file" name="pic5" accept="image/*">
 		<input type="text" id="activity_4" name="activity_4" placeholder="Länk till fjärde aktiviteten">
 		<input type="text" id="activities" name="activities" placeholder="Länk till aktiviteter">
 		<input type="text" id="travel" name="travel" placeholder="Länk till transporten">
 		<input type="text" id="lodging" name="lodging" placeholder="Länk till boende">
+        <p>Stadsbilden</p>
 		<input type="file" name="pic6" accept="image/*">
 		<input type="text" name="imgText1" placeholder="Text för bild ovan vänster">
 		<input type="text" name="imgText2" placeholder="Text för bild ovan höger">
 		<input type="text" name="imgText3" placeholder="Text för bild ovan vänster">
 		<input type="text" name="imgText4" placeholder="Text för bild ovan höger">
-		<label for="edit_country">Land</label>
-		<input type="text" id="edit_country" name="country" placeholder="Land:">
+		<input type="text" id="edit_country" name="country" placeholder="Namn landet:">
 		<textarea rows="4" cols="50" id="edit_country_desc" name="country_desc" form="admin_box" placeholder="Beskrivning av land:"></textarea>
-		<input type="submit" value="spara ändringar" name="btn">
-		<input type="submit" value="ta bort" name="btn">
-		<label for="edit_city">Stad</label>
-		<input type="text" id="edit_city" name="city" placeholder="Stad">
+		<input type="text" id="edit_city" name="city" placeholder="Namn för staden:">
 		<textarea rows="4" cols="50" id="edit_city_desc" name="city_desc" form="admin_box" placeholder="Beskrivning av stad:"></textarea>
-		<label for="edit_criteria">Kriterie</label>
-		<input type="text" id="edit_criteria" name="criteria" placeholder="Kriterie">
 
 		<!--VÄLJ LAND-->
 		<h4 id="form_headings">Kontinent</h4>
@@ -201,15 +194,15 @@ if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
 		</p>
 		<p>
 			<input type="checkbox" name="sun" id="sun" class="checkbox">
-			<label for="sun">Sol och värme (ca 20 grader eller mer)</label>
+			<label for="sun">Torrt klimat</label>
 		</p>
 		<p>
 			<input type="checkbox" name="cool_weather" id="cool_weather" class="checkbox">
-			<label for="cool_weather">Sval temperatur (ca 10-20 grader)</label>
+			<label for="cool_weather">Varmtempererat klimat</label>
 		</p>
 		<p>
 			<input type="checkbox" name="snow" id="snow" class="checkbox">
-			<label for="snow">Snö och kallt (kring fryspunkten eller kallare)</label>
+			<label for="snow">Kalltempererat klimat</label>
 		</p>
 		<p>
 			Kryssa i om du vill ha någon särskild terräng.
@@ -235,22 +228,6 @@ if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
 			<label for="water">Närhet till vatten</label>
 		</p>
 		<hr>
-		<!--DISTANS-->
-		<h2 id="distance">Distans</h2>
-		<p>
-			Välj hur långt bort resmålet som längst får lov att ligga.
-		</p>
-		<p>
-			<select>
-				<option name="distance_1">1 m</option>
-				<option name="distance_2">2 m</option>
-				<option name="distance_3">3 m</option>
-			</select>
-		</p>
-		<p>
-			Karta.
-		</p>
-		<hr>
 		<!--TRANSPORTMEDEL-->
 		<h2 id="transport">Transportmedel</h2>
 		<p>
@@ -273,8 +250,7 @@ if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
 			<label for="other_transport">Annat/eget transportmedel</label>
 		</p>
 		<hr>
-		<input type="submit" value="spara ändringar" name="btn">
-		<input type="submit" value="ta bort" name="btn">
+		<input type="submit" value="Lägg till" name="btn">
 	</form>
 
 
