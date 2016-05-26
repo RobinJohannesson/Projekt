@@ -63,8 +63,6 @@ if(isset($_GET['id'])) {
             <ol class="breadcrumb">
                 <li><a href="index.html">&gt;&gt;Start</a></li>
                 <li><a href="kriterier.html">&gt;&gt;Kriterier</a></li>
-                <li><a href="show_country.html">&gt;&gt;Länder</a></li>
-                <li>&gt;&gt;Städer</li>
             </ol>
         </div>
         <div class="dropdown">

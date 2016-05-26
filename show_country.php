@@ -53,7 +53,6 @@ error_reporting(0);
                 <ol class="breadcrumb">
                     <li><a href="index.html">&gt;&gt;Start</a></li>
                     <li><a href="kriterier.html">&gt;&gt;Kriterier</a></li>
-                    <li class="active">&gt;&gt;Länder</li>
                 </ol>
             </div>
             <div class="dropdown">
