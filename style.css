@@ -818,6 +818,7 @@ input[type=submit] {
 .dropdown a {
     text-decoration: none;
     font-size: 26px;
+    padding-right: 5px;
 }
 
 .dropdown {
