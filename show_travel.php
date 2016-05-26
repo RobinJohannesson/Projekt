@@ -50,7 +50,7 @@ if(isset($_GET['id'])) {
 <style>
     #alter {
 
-        background-image: url(<?=strtolower('img/'. $fetch['land']) . '/' . strtolower($fetch['stad']) .'/' . $fetch['img1']?>);
+        background-image: url('<?=strtolower('img/'. $fetch['land']) . '/' . strtolower($fetch['stad']) .'/' . $fetch['img1']?>');
         background-repeat: no-repeat;
         background-size: cover;
     }
