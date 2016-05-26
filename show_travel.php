@@ -67,6 +67,9 @@ if(isset($_GET['id'])) {
                 <li>&gt;&gt;Städer</li>
             </ol>
         </div>
+        <div class="dropdown">
+            <a href="kontakt.html">Om oss</a>
+        </div>
     </header>
     <div id="wrapper">
         <?php
@@ -95,7 +98,7 @@ if(isset($_GET['id'])) {
                         <h2>3 Städer</h2>
                     </div>
                     <div class="widget_content" id="widget_content_first">
-                        <a href="show_city.php?stad='.  $fetchAll[0]['stad'].  '">
+                        <a href="show_city.php?stad='.  $fetchAll[0]['stad'].  '" target="_blank">
                 <img alt="'  . (isset($fetchAll[0] ) ? $fetchAll[0]['stad']  : "img").  '" class="widget" src="img/'. strtolower($fetchAll[0]['land']) . '/' . strtolower($fetchAll[0]['stad']) .'/' . (isset($fetchAll[0] ) ? $fetchAll[0]['img1']  : "").  '">
 
                             <div id="widget_text">
@@ -104,7 +107,7 @@ if(isset($_GET['id'])) {
                         </a>
                     </div>
                     <div class="widget_content" id="widget_content_second">
-                        <a href="show_city.php?stad='.  $fetchAll[1]['stad'].  '">
+                        <a href="show_city.php?stad='.  $fetchAll[1]['stad'].  '" target="_blank">
                 <img alt="'  . (isset($fetchAll[1] ) ? $fetchAll[1]['stad']  : "img").  '" class="widget" src="img/' . strtolower($fetchAll[1]['land']) . '/' . strtolower($fetchAll[1]['stad']) .'/' . (isset($fetchAll[1] ) ? $fetchAll[1]['img1']  : "").  '">
 
                             <div id="widget_text">
@@ -113,7 +116,7 @@ if(isset($_GET['id'])) {
                         </a>
                     </div>
                     <div class="widget_content" id="widget_content_third">
-                        <a href="show_city.php?stad='.  $fetchAll[2]['stad'].  '">
+                        <a href="show_city.php?stad='.  $fetchAll[2]['stad'].  '" target="_blank">
                 <img alt="'  . (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : "img").  '" class="widget" src="img/'. strtolower($fetchAll[2]['land']) . '/' . strtolower($fetchAll[2]['stad']) .'/' . (isset($fetchAll[2] ) ? utf8_encode($fetchAll[2]['img1'])  : "").  '">
 
                             <div id="widget_text">

@@ -376,6 +376,7 @@ label {
     height: 260px;
     width: 200px;
     float: left;
+    text-align: center;
     margin: 45px 30px 0px 30px;
     animation-name: widget_content_open;
     animation-duration: 1s;
