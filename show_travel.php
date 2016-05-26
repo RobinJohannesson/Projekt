@@ -67,9 +67,6 @@ if(isset($_GET['id'])) {
                 <li>&gt;&gt;Städer</li>
             </ol>
         </div>
-        <div class="dropdown">
-            <a href="kontakt.html">Om oss</a>
-        </div>
     </header>
     <div id="wrapper">
         <?php
