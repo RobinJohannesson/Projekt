@@ -22,7 +22,16 @@ $query = "";
         <link rel="icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
        <title>Horizon</title>
     </head>
-    <body id="kairo_body">
+	
+	<style>
+    #alter {
+
+        background-image: url(img/view.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+    <body id="alter">
 		<header>
 			<h1><a href="index.html">Horizon</a></h1>
             <h2 class="under_rubrik_text">Du väljer kriterier, Vi tar fram resan</h2>
@@ -66,21 +75,26 @@ $query = "";
 				</p>
 				<a href="' . $row['imgLink1'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img2'] . '" class="activity_img" class="activity_left"></a>
 				<a href="' . $row['imgLink2'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img3'] . '" class="activity_img" class="activity_left"></a>
+				<div class="gather">
 				<p class="activity_text" class="activity_left">
 					' . $row['imgText1'] . '
 				</p>
 				<p class="activity_text" class="activity_right"> 
 					' . $row['imgText2'] . '
 				</p>
+				</div>
 				<a href="' . $row['imgLink3'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img4'] . '" class="activity_img" class="activity_left"></a>
 				<a href="' . $row['imgLink4'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img5'] . '" class="activity_img" class="activity_left"></a>
+				<div class="gather">
 				<p class="activity_text" class="activity_left">
 					' . $row['imgText3'] . '
 				</p>
 				<p class="activity_text" class="activity_right">
 					' . $row['imgText4'] . '
 				</p>
+				</div>
 				<h2 class="form_headings">Länkar till bokningssidor</h2>
+				
 				<p class="white_text">
 					Hotell: ' . $row['hotellText'] . '
 				</p>
