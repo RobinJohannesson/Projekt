@@ -28,7 +28,6 @@ error_reporting(0);
 <html>
 
 <head>
-    <meta http-equiv="Content-type" content="text/html" charset="utf-8">
     <link type="text/css" rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
@@ -99,7 +98,7 @@ if(isset($_GET['id'])) {
                         <a href="show_city.php?stad='.  $fetchAll[0]['stad'].  '" target="_blank">
                 <img alt="'  . (isset($fetchAll[0] ) ? $fetchAll[0]['stad']  : "img").  '" class="widget" src="img/'. strtolower($fetchAll[0]['land']) . '/' . strtolower($fetchAll[0]['stad']) .'/' . (isset($fetchAll[0] ) ? $fetchAll[0]['img1']  : "").  '">
 
-                            <div id="widget_text">
+                            <div class="widget_text">
                                 <h2>' .(isset($fetchAll[0] ) ? $fetchAll[0]['stad']  : "") . '</h2>
                             </div>
                         </a>
@@ -108,7 +107,7 @@ if(isset($_GET['id'])) {
                         <a href="show_city.php?stad='.  $fetchAll[1]['stad'].  '" target="_blank">
                 <img alt="'  . (isset($fetchAll[1] ) ? $fetchAll[1]['stad']  : "img").  '" class="widget" src="img/' . strtolower($fetchAll[1]['land']) . '/' . strtolower($fetchAll[1]['stad']) .'/' . (isset($fetchAll[1] ) ? $fetchAll[1]['img1']  : "").  '">
 
-                            <div id="widget_text">
+                            <div class="widget_text">
                                 <h2>' . (isset($fetchAll[1] ) ? $fetchAll[1]['stad']  : "") . '</h2>
                             </div>
                         </a>
@@ -117,7 +116,7 @@ if(isset($_GET['id'])) {
                         <a href="show_city.php?stad='.  $fetchAll[2]['stad'].  '" target="_blank">
                 <img alt="'  . (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : "img").  '" class="widget" src="img/'. strtolower($fetchAll[2]['land']) . '/' . strtolower($fetchAll[2]['stad']) .'/' . (isset($fetchAll[2] ) ? utf8_encode($fetchAll[2]['img1'])  : "").  '">
 
-                            <div id="widget_text">
+                            <div class="widget_text">
                                 <h2>'. (isset($fetchAll[2] ) ? $fetchAll[2]['stad']  : "") . '</h2>
                             </div>
                         </a>
@@ -147,7 +146,7 @@ if(isset($_GET['id'])) {
                 <a href="kairo.html">
                     <div id="widget_first" class="widget">
                     </div>
-                    <div id="widget_text">
+                    <div class="widget_text">
                         <h2>Kairo</h2>
                     </div>
                 </a>
@@ -156,7 +155,7 @@ if(isset($_GET['id'])) {
                 <a href="alexandria.html">
                     <div id="widget_second" class="widget">
                     </div>
-                    <div id="widget_text">
+                    <div class="widget_text">
                         <h2>Alexandria</h2>
                     </div>
                 </a>
@@ -165,7 +164,7 @@ if(isset($_GET['id'])) {
                 <a href="luxor.html">
                     <div id="widget_third" class="widget">
                     </div>
-                    <div id="widget_text">
+                    <div class="widget_text">
                         <h2>Luxor</h2>
                     </div>
                 </a>

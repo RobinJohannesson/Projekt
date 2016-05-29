@@ -66,7 +66,7 @@ error_reporting(0);
                while ($row = mysqli_fetch_assoc($result1)) {
 
                    echo '<a href="show_travel.php?id='. $row['id'] .'" target="_blank">
-                   <img class="country_widget" id="first_country_widget" src="img/' . $row['land'] . '/' . $row['stad'].'/' . $row['img1'] . '">
+                   <img class="country_widget" src="img/' . $row['land'] . '/' . $row['stad'].'/' . $row['img1'] . '">
 
                    <div class="country_text">
                         <h2>' . $row['land'] . '</h2>
@@ -82,7 +82,7 @@ error_reporting(0);
                while ($row = mysqli_fetch_assoc($result1)) {
 
                    echo '<a href="show_travel.php?id='. $row['id'] .'" target="_blank">
-                   <img class="country_widget" id="first_country_widget" src="img/' . $row['land'] . '/' . $row['stad'].'/' . $row['img1'] . '">
+                   <img class="country_widget" src="img/' . $row['land'] . '/' . $row['stad'].'/' . $row['img1'] . '">
 
                    <div class="country_text">
                         <h2>' . $row['land'] . '</h2>
@@ -98,7 +98,7 @@ error_reporting(0);
                while ($row = mysqli_fetch_assoc($result1)) {
 
                    echo '<a href="show_travel.php?id='. $row['id'] .'" target="_blank">
-                   <img class="country_widget" id="first_country_widget" src="img/' . $row['land'] . '/' . $row['stad'].'/' . $row['img1'] . '">
+                   <img class="country_widget" src="img/' . $row['land'] . '/' . $row['stad'].'/' . $row['img1'] . '">
 
                    <div class="country_text">
                         <h2>' . $row['land'] . '</h2>

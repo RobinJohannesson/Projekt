@@ -22,15 +22,6 @@ $query = "";
         <link rel="icon" href="img/horizon_dark_sunset.jpg" type="image/x-icon">
        <title>Horizon</title>
     </head>
-	
-	<style>
-    #alter {
-
-        background-image: url(img/view.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-</style>
     <body id="body_resa">
 		<header>
 			<h1><a href="index.html">Horizon</a></h1>
@@ -70,23 +61,23 @@ $query = "";
 				<p class="white_text">
 					Klicka på bilderna för att boka just dessa aktiviteter
 				</p>
-				<a href="' . $row['imgLink1'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img2'] . '" class="activity_img" class="activity_left"></a>
-				<a href="' . $row['imgLink2'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img3'] . '" class="activity_img" class="activity_left"></a>
+				<a href="' . $row['imgLink1'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img2'] . '" class="activity_img"></a>
+				<a href="' . $row['imgLink2'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img3'] . '" class="activity_img"></a>
 				<div class="gather">
-				<p class="activity_text" class="activity_left">
+				<p class="activity_text">
 					' . $row['imgText1'] . '
 				</p>
-				<p class="activity_text" class="activity_right"> 
+				<p class="activity_text"> 
 					' . $row['imgText2'] . '
 				</p>
 				</div>
-				<a href="' . $row['imgLink3'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img4'] . '" class="activity_img" class="activity_left"></a>
-				<a href="' . $row['imgLink4'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img5'] . '" class="activity_img" class="activity_left"></a>
+				<a href="' . $row['imgLink3'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img4'] . '" class="activity_img"></a>
+				<a href="' . $row['imgLink4'] . '"><img src="img/' . $row['land'] . '/' .$row['stad'].'/'. $row['img5'] . '" class="activity_img"></a>
 				<div class="gather">
-				<p class="activity_text" class="activity_left">
+				<p class="activity_text">
 					' . $row['imgText3'] . '
 				</p>
-				<p class="activity_text" class="activity_right">
+				<p class="activity_text">
 					' . $row['imgText4'] . '
 				</p>
 				</div>

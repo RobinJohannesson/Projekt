@@ -65,7 +65,7 @@ if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
 		<textarea rows="4" cols="50" id="edit_city_desc" name="city_desc" form="admin_box" placeholder="Beskrivning av stad:"></textarea>
 
 		<!--VÄLJ LAND-->
-		<h4 id="form_headings">Kontinent</h4>
+		<h4 class="form_headings">Kontinent</h4>
 		<p>
 			<select>
 				<option name="no_continent_preference">Ingen preferens</option>
@@ -78,7 +78,7 @@ if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
 				<option name="antarctica">Antarktis</option>
 			</select>
 		</p>
-		<h4 id="form_headings">Land</h4>
+		<h4 class="form_headings">Land</h4>
 		<p>
 			<select>
 				<option name="no_country_preference">Ingen preferens</option>

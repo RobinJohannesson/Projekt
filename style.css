@@ -162,7 +162,7 @@ p {
 }
 .p_img {
     position: absolute;
-    margin-top: -47;
+    margin-top: -47px;
     margin-left: 39px;
     font-size: 23px;
     color: white;
@@ -333,6 +333,10 @@ label {
     color: white;
     padding: 15px;
     font-size: 20px;
+}
+
+.text_left {
+    text-align: left;
 }
 
 #syfte {
