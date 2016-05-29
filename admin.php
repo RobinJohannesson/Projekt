@@ -68,27 +68,27 @@ if(isset($_SESSION['user']) && $_SESSION['user'] == "Logged In") {
 		<h4 class="form_headings">Kontinent</h4>
 		<p>
 			<select>
-				<option name="no_continent_preference">Ingen preferens</option>
-				<option name="europe">Europa</option>
-				<option name="south_america">Sydamerika</option>
-				<option name="north_america">Nordamerika</option>
-				<option name="asia">Asien</option>
-				<option name="australia">Australien (Oceanien)</option>
-				<option name="africa">Afrika</option>
-				<option name="antarctica">Antarktis</option>
+				<option>Ingen preferens</option>
+				<option>Europa</option>
+				<option>Sydamerika</option>
+				<option>Nordamerika</option>
+				<option>Asien</option>
+				<option>Australien (Oceanien)</option>
+				<option>Afrika</option>
+				<option>Antarktis</option>
 			</select>
 		</p>
 		<h4 class="form_headings">Land</h4>
 		<p>
 			<select>
-				<option name="no_country_preference">Ingen preferens</option>
-				<option name="spain">Spanien</option>
-				<option name="japan">Japan</option>
-				<option name="greece">Grekland</option>
-				<option name="usa">USA</option>
-				<option name="norway">Norge</option>
-				<option name="egypt">Egypten</option>
-				<option name="china">Kina</option>
+				<option>Ingen preferens</option>
+				<option>Spanien</option>
+				<option>Japan</option>
+				<option>Grekland</option>
+				<option>USA</option>
+				<option>Norge</option>
+				<option>Egypten</option>
+				<option>Kina</option>
 			</select>
 			<!--Viktigt att lägga in de länder som finns i scenario-->
 		</p>
